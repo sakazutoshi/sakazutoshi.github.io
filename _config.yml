@@ -18,15 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Hoa anh đào trong bão
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi. Mình là Anh Đào. Blog này là nơi mình tổng hợp lại các kiến thức về kỹ thuật cũng như tiếng Nhật chuyên ngành IT
   dưới góc nhìn của một Comtor. Mình rất vui nếu như blog này cũng giúp ích một phần nào đó cho bạn trên con đường học tập.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+facebook_username: sakazutoshi
+github_username:  sakazutoshi
 
 # Build settings
 theme: minima
