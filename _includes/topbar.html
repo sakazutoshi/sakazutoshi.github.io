@@ -31,7 +31,7 @@
     <div id="topbar-title">
       {% if page.layout == 'home' %}
         {{- site.title -}}
-      {% elsif page.dynamic_title %}
+      {% elsif page.collection == 'tabs' %}
         {{- page.title -}}
       {% else %}
         {{- page.layout | capitalize -}}
