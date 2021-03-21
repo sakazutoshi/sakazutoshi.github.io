@@ -12,20 +12,11 @@ Tuy nhiên, khác với Gairaigo (外来語) - những từ ngoại lai được
 
 Lẽ dĩ nhiên, nếu người Nhật sử dụng y nguyên những từ Wasei-eigo này để giao tiếp với người nói tiếng Anh, thì người nghe cũng không thể nào hiểu được. Và với vai trò là cầu nối giữa hai bên Nhật - Việt, một IT Communicator cần phải chú ý khi gặp những từ vựng kiểu này, để có cách dịch chính xác và tự nhiên nhất. Hôm nay, mình sẽ giới thiệu một số từ Wasei-eigo thường được sử dụng trong ngành IT, và cách diễn đạt chúng trong tiếng Anh/ tiếng Việt nhé.
 
-#### Mục lục
-- [バージョンアップ (Version up)・バージョンダウン (Version down)](#バージョンアップ-(version-up)・バージョンダウン-(version-down))
-- [デグレーション・デグレード・デグレ (Degradation, Degrade)](#デグレーション・デグレード・デグレ-(degradation,-degrade))
-- [サービスイン (Service in)](#サービスイン-(service-in))
-- [カットオーバー (Cut over)](#カットオーバー-(cut-over))
-- [システムダウン (System down)](#システムダウン-(system-down))
-- [アンダーバー (Underbar)](#アンダーバー-(underbar))
-- [チャージ (Charge)](#チャージ-(Charge))
-
 ###バージョンアップ (Version up)・バージョンダウン (Version down)
 
 Khi một từ Wasei-eigo có chữ "up" hay “down” đứng sau, nó có nghĩa là "tăng lên", "cải thiện" hay “làm giảm”, “hạ xuống” thứ gì đó.
-Vì vậy, có thể dễ dàng đoán được Version up nghĩa là nâng cấp phần mềm lên phiên bản mới hơn, Version down nghĩa là hạ phần mềm xuống lại phiên bản cũ hơn.
-Có nhiều người vẫn giữ nguyên như vậy khi dịch qua tiếng Anh, tuy nhiên thật sự thì đây là một từ Wasei-eigo, và trong tiếng Anh không tồn tại cách nói như vậy.
+Vì vậy, có thể dễ dàng đoán được Version up nghĩa là nâng cấp phần mềm lên phiên bản mới hơn, Version down nghĩa là hạ phần mềm xuống lại phiên bản cũ hơn.   
+Có nhiều người vẫn giữ nguyên như vậy khi dịch qua tiếng Anh, tuy nhiên thật sự thì đây là một từ Wasei-eigo, và trong tiếng Anh không tồn tại cách nói như vậy.   
 Trong tiếng Anh, khái niệm này được gọi là "Upgrade (version)", "Downgrade (version)".
 
 Ex:   
@@ -37,24 +28,25 @@ Có trường hợp layout hay bề ngoài sẽ thay đổi do downgrade
 
 ###デグレーション・デグレード・デグレ (Degradation, Degrade)
 
-Việc xuất hiện bug khác do ảnh hưởng khi thay đổi, chỉnh sửa một phần nào đó trong program, khiến chất lượng sản phẩm còn tệ hơn trước đó trong tiếng Nhật được gọi là "デグレード", nói gọn lại là "デグレ" (Degrade). Để dễ hiểu hơn, bạn cứ tưởng tượng như thế này: lúc lập trình, xuất hiện tình trạng chức năng rõ ràng đã implement ok rồi mà giờ lại bị mất đi/ không hoạt động được, hay cái bug rõ ràng là đã loại bỏ đi rồi thì giờ lại xuất hiện lại.</br>
+Việc xuất hiện bug khác do ảnh hưởng khi thay đổi, chỉnh sửa một phần nào đó trong program, khiến chất lượng sản phẩm còn tệ hơn trước đó trong tiếng Nhật được gọi là "デグレード", nói gọn lại là "デグレ" (Degrade).   
+Để dễ hiểu hơn, bạn cứ tưởng tượng như thế này: lúc lập trình, xuất hiện tình trạng chức năng rõ ràng đã implement ok rồi mà giờ lại bị mất đi/ không hoạt động được, hay cái bug rõ ràng là đã loại bỏ đi rồi thì giờ lại xuất hiện lại.  
 Ngoài ra, việc kiểm thử được thực hiện để đảm bảo xem có xảy ra tình trạng như vậy hay không được gọi là "デグレードテスト" (Degrade test), "ノンデグレードテスト" (Non derade test)...
 
-Tuy nhiên, từ "デグレード" này là một từ Wasei-eigo chỉ có thể hiểu được khi dùng trong ngành IT của Nhật thôi.</br>
+Tuy nhiên, từ "デグレード" này là một từ Wasei-eigo chỉ có thể hiểu được khi dùng trong ngành IT của Nhật thôi.   
 Trong tiếng Anh, hiện tượng như trên được gọi là "Regression", và việc kiểm thử hiện tượng đó được gọi là "Regression testing".
 
-Từ "Degrade" trong tiếng Anh là một động từ mang ý nghĩa làm giảm giá trị, làm giảm chất lượng, nên cách sử dụng trong ngữ cảnh như trên cũng không hợp lý nhỉ.
+Từ "Degrade" trong tiếng Anh là một động từ mang ý nghĩa làm giảm giá trị, làm giảm chất lượng, nên cách sử dụng trong ngữ cảnh như trên cũng không hợp lý nhỉ.   
 Thêm nữa, cũng có khi ta bắt gặp từ "デグレーション", nhưng trong tiếng Anh thì danh từ của "degrade" là "degradation", chứ không hề tồn tại từ "degration".
 
 Ex:   
 ソフトウェアの修正を行うたびに、デグレードテストを実施しなければなりません。    
 Phải thực hiện regression test mỗi khi chỉnh sửa phần mềm.
 
-※Thông tin thêm: Có người còn chia デグレード ra hai loại như sau:
+※Thông tin thêm: Có người còn chia デグレード ra hai loại như sau:  
 1) "先祖返り" (せんぞがえり)   
    Khi upgrade version, chức năng vốn đã sửa rồi lại quay trở về version trước đó.   
    Nói một cách cụ thể hơn về khái niệm này là: do có sai sót, nhầm lẫn trong việc quản lý version, mà chức năng chắc chắn đã làm thêm rồi giờ bị biến mất, hay cái bug vốn đã fix rồi giờ lại bị lại.
-
+   
 2) "エンバグ" (Enbug)   
    Do thay đổi source code để fix bug hay thêm chức năng mà lại tạo ra bug khác trước giờ chưa có được gọi là "エンバグ".  
    Từ "エンバグ" này cũng giống với "デグレード", là một Wasei-eigo, nên đây là cách nói không tồn tại trong tiếng Anh.   
@@ -78,7 +70,8 @@ Trong khi từ "カットオーバー" trong tiếng Nhật thường dùng đ�
 
 ###システムダウン (System down)
 
-Việc hệ thống bị dừng hoạt động hay tắt bất thường, ngoài mong muốn được gọi là "システムダウン". Trong tiếng Việt, chúng ta dùng cách nói "sập hệ thống", còn trong tiếng Anh thì không có cách diễn đặt bằng danh từ kiểu như "system down" như vậy. Trong tiếng Anh, thường sử dụng cách nói "system failure" hay "system crash".
+Việc hệ thống bị dừng hoạt động hay tắt bất thường, ngoài mong muốn được gọi là "システムダウン". Trong tiếng Việt, chúng ta dùng cách nói "sập hệ thống", còn trong tiếng Anh thì không có cách diễn đặt bằng danh từ kiểu như "system down" như vậy.   
+Trong tiếng Anh, thường sử dụng cách nói "system failure" hay "system crash".
 
 Ex:    
 システムダウンによりご不便をおかけして申し訳ございません。   
@@ -94,7 +87,7 @@ Our computer system went down due to a power outage.
 
 ###アンダーバー (Underbar)
 
-Dấu gạch dưới "_" trong tiếng Nhật thường được gọi là "アンダーバー", nhưng trong tiếng Anh thì gọi là "Underscore"
+Dấu gạch dưới "_" trong tiếng Nhật thường được gọi là "アンダーバー", nhưng trong tiếng Anh thì gọi là "Underscore".
 
 Ex:   
 ドメイン名にアンダーバーを使うことはできません。    
