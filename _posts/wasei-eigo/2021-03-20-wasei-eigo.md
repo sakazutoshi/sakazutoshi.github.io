@@ -18,11 +18,11 @@ Vì vậy, có thể dễ dàng đoán được Version up nghĩa là nâng cấ
 Có nhiều người vẫn giữ nguyên như vậy khi dịch qua tiếng Anh, tuy nhiên thật sự thì đây là một từ Wasei-eigo, và trong tiếng Anh không tồn tại cách nói như vậy.
 Trong tiếng Anh, khái niệm này được gọi là "Upgrade (version)", "Downgrade (version)".
 
-Ex: </br>
-お使いのブラウザを最新版にバージョンアップしてください。</br>
+Ex:   
+お使いのブラウザを最新版にバージョンアップしてください。   
 Please upgrade your browser to the latest version.
 
-バージョンダウンすることによってレイアウトや見た目が変わる場合があります。</br>
+バージョンダウンすることによってレイアウトや見た目が変わる場合があります。   
 Có trường hợp layout hay bề ngoài sẽ thay đổi do downgrade
 
 **デグレーション・デグレード・デグレ (Degradation, Degrade)**
@@ -36,27 +36,27 @@ Trong tiếng Anh, hiện tượng như trên được gọi là "Regression", v
 Từ "Degrade" trong tiếng Anh là một động từ mang ý nghĩa làm giảm giá trị, làm giảm chất lượng, nên cách sử dụng trong ngữ cảnh như trên cũng không hợp lý nhỉ. 
 Thêm nữa, cũng có khi ta bắt gặp từ "デグレーション", nhưng trong tiếng Anh thì danh từ của "degrade" là "degradation", chứ không hề tồn tại từ "degration".
 
-Ex: </br>
-ソフトウェアの修正を行うたびに、デグレードテストを実施しなければなりません。
+Ex:   
+ソフトウェアの修正を行うたびに、デグレードテストを実施しなければなりません。    
 Phải thực hiện regression test mỗi khi chỉnh sửa phần mềm.
 
 ※Thông tin thêm: Có người còn chia デグレード ra hai loại như sau:
-1) "先祖返り" (せんぞがえり)
+1) "先祖返り" (せんぞがえり)   
    Khi upgrade version, chức năng vốn đã sửa rồi lại quay trở về version trước đó. 
    Nói một cách cụ thể hơn về khái niệm này là: do có sai sót, nhầm lẫn trong việc quản lý version, mà chức năng chắc chắn đã làm thêm rồi giờ bị biến mất, hay cái bug vốn đã fix rồi giờ lại bị lại.
-2) "エンバグ" (Enbug)
+2) "エンバグ" (Enbug)   
    Do thay đổi source code để fix bug hay thêm chức năng mà lại tạo ra bug khác trước giờ chưa có được gọi là "エンバグ"
    Từ "エンバグ" này cũng giống với "デグレード", là một Wasei-eigo, nên đây là cách nói không tồn tại trong tiếng Anh. 
    Vì đây là sai sót khác với "リグレッション (Regression)" mang nghĩa "退行 - Giật lùi, đi ngược trở lại", nên cũng có người phân biệt từ này với "デグレード"
 
 **サービスイン (Service in)**
 
-Việc hệ thống mới bắt đầu đi vào hoạt động chính thức được gọi là "サービスイン", nhưng trong tiếng Anh, nếu dùng từ ngày thì người ta sẽ không hiểu.
+Việc hệ thống mới bắt đầu đi vào hoạt động chính thức được gọi là "サービスイン", nhưng trong tiếng Anh, nếu dùng từ này thì người ta sẽ không hiểu.
 Từ tương ứng với nghĩa này trong tiếng Anh là "go-live". Là danh từ thì có dấu gạch ngang ở giữa. Còn động từ thì có thể dùng "go live"
 Ngoài ra, cũng có thể sử dụng từ "release" hay "launch" với nghĩa tương tự. 
 
-Ex: </br>
-このシステムは来月サービスインする予定です。</br>
+Ex:    
+このシステムは来月サービスインする予定です。  
 This system will go live next month.
 
 **カットオーバー (Cut over)**
@@ -69,27 +69,27 @@ Trong khi từ "カットオーバー" trong tiếng Nhật thường dùng đ�
 
 Việc hệ thống bị dừng hoạt động hay tắt bất thường, ngoài mong muốn được gọi là "システムダウン". Trong tiếng Việt, chúng ta dùng cách nói "sập hệ thống", còn trong tiếng Anh thì không có cách diễn đặt bằng danh từ kiểu như "system down" như vậy. Trong tiếng Anh, thường sử dụng cách nói "system failure" hay "system crash".
 
-Ex: </br>
-システムダウンによりご不便をおかけして申し訳ございません。</br>
+Ex:    
+システムダウンによりご不便をおかけして申し訳ございません。   
 We apologize for any inconvenience caused by the system failure.
 
 Còn khi sử dụng từ "down", thì sẽ diễn đạt theo kiểu "động từ tobe + down" hay "go down".
 
-昨日から在庫管理システムがダウンしています。
+昨日から在庫管理システムがダウンしています。    
 The inventory management system has been down since yesterday.
 
-停電のため、コンピュータシステムがダウンしました。
+停電のため、コンピュータシステムがダウンしました。    
 Our computer system went down due to a power outage.
 
 **アンダーバー (Underbar)**
 
 Dấu gạch dưới "_" trong tiếng Nhật thường được gọi là "アンダーバー", nhưng trong tiếng Anh thì gọi là "Underscore"
 
-Ex:</br>
-ドメイン名にアンダーバーを使うことはできません。
+Ex:   
+ドメイン名にアンダーバーを使うことはできません。    
 You can’t use an underscore in the domain name.
 
-iPadでアンダーバー記号を入力するにはどうすればよいですか？
+iPadでアンダーバー記号を入力するにはどうすればよいですか？    
 How can I type an underscore symbol on iPad?
 
 **チャージ (Charge)**
@@ -97,9 +97,9 @@ How can I type an underscore symbol on iPad?
 Ở Nhật, người ta dùng khái niệm "チャージ" khi nạp tiền vào thẻ PASMO, SUICA,... Trong tiếng Việt, chúng ta cũng hay dùng cách nói tương tự là "charge tiền" đúng không nào?
 Nhưng thật sự thì trong tiếng Anh, họ không dùng từ charge để chỉ việc nạp tiền, tăng số dư trong thẻ đâu. Trong tiếng Anh, khái niệm này được diễn đạt bằng từ "refill" hoặc "top-up".
 
-Ex: </br>
-PASMOカードは何度でも繰り返し入金できます。</br>
+Ex:    
+PASMOカードは何度でも繰り返し入金できます。   
 You can refill your PASMO card as many times as desired.
 
-Vẫn còn rất rất nhiều từ Wasei-eigo nữa, mình không thể nào liệt kê hết được (thậm chí, có rất nhiều từ mà người Nhật cũng không biết chúng là Wasei-eigo đâu).</br>
+Vẫn còn rất rất nhiều từ Wasei-eigo nữa, mình không thể nào liệt kê hết được (thậm chí, có rất nhiều từ mà người Nhật cũng không biết chúng là Wasei-eigo đâu).   
 Mỗi dự án chúng ta làm đều có những từ vựng riêng ứng với chuyên ngành, nghiệp vụ mà hệ thống đó phục vụ. Vì vậy, nếu có bắt gặp những từ vựng mới là Katakana, thì đừng vội vàng dịch chúng ra ngay, mà hãy cẩn thận tìm hiểu, rồi đưa ra cách dịch đúng, phù hợp nhất nhé ^^
