@@ -6,13 +6,23 @@ categories: [Japanese]
 tags: [wasei-eigo]
 ---
 [![](wasei-eigo.jpeg)](wasei-eigo.jpeg)
+
 Sử dụng tiếng Nhật để làm việc trong ngành IT, chắc hẳn bạn sẽ dễ dàng nhận ra một đặc thù: có rất nhiều từ vựng chuyên ngành là từ Katakana. Hầu hết chúng đều bắt nguồn từ tiếng Anh. Và thông thường thì giữ nguyên tiếng Anh, không cố dịch ra tiếng Việt là lựa chọn khôn ngoan nhất.
 
 Tuy nhiên, khác với Gairaigo (外来語) - những từ ngoại lai được vay mượn trực tiếp từ ngôn ngữ nước ngoài và “may mắn” còn giữ được nguyên ngữ nghĩa của chúng khi “nhập khẩu”, thì người Nhật còn xào nấu tiếng Anh để sáng tạo nên một lớp từ vựng kiểu mới, nhìn thì có vẻ giống tiếng Anh đấy, nhưng thực chất thì nghĩa đã bị thay đổi từ một phần cho đến hoàn toàn so với nghĩa gốc ban đầu - chúng được gọi là Wasei-eigo (和製英語).
 
 Lẽ dĩ nhiên, nếu người Nhật sử dụng y nguyên những từ Wasei-eigo này để giao tiếp với người nói tiếng Anh, thì người nghe cũng không thể nào hiểu được. Và với vai trò là cầu nối giữa hai bên Nhật - Việt, một IT Communicator cần phải chú ý khi gặp những từ vựng kiểu này, để có cách dịch chính xác và tự nhiên nhất. Hôm nay, mình sẽ giới thiệu một số từ Wasei-eigo thường được sử dụng trong ngành IT, và cách diễn đạt chúng trong tiếng Anh/ tiếng Việt nhé.
 
-###バージョンアップ (Version up)・バージョンダウン (Version down)
+**Mục lục**
+1. [バージョンアップ (Version up)・バージョンダウン (Version down)](#バージョンアップ-(Version up)・バージョンダウン-(Version down))
+2. [デグレーション・デグレード・デグレ (Degradation, Degrade)](#デグレーション・デグレード・デグレ-(Degradation,-Degrade))
+3. [サービスイン (Service in)](#サービスイン-(Service-in))
+4. [カットオーバー (Cut over)](#カットオーバー-(Cut-over))
+5. [システムダウン (System down)](#システムダウン-(System-down))
+6. [アンダーバー (Underbar)](#アンダーバー-(Underbar))
+7. [チャージ (Charge)](#チャージ-(Charge))
+
+### バージョンアップ (Version up)・バージョンダウン (Version down)
 
 Khi một từ Wasei-eigo có chữ "up" hay “down” đứng sau, nó có nghĩa là "tăng lên", "cải thiện" hay “làm giảm”, “hạ xuống” thứ gì đó.
 Vì vậy, có thể dễ dàng đoán được Version up nghĩa là nâng cấp phần mềm lên phiên bản mới hơn, Version down nghĩa là hạ phần mềm xuống lại phiên bản cũ hơn.   
@@ -26,7 +36,7 @@ Please upgrade your browser to the latest version.
 バージョンダウンすることによってレイアウトや見た目が変わる場合があります。   
 Có trường hợp layout hay bề ngoài sẽ thay đổi do downgrade
 
-###デグレーション・デグレード・デグレ (Degradation, Degrade)
+### デグレーション・デグレード・デグレ (Degradation, Degrade)
 
 Việc xuất hiện bug khác do ảnh hưởng khi thay đổi, chỉnh sửa một phần nào đó trong program, khiến chất lượng sản phẩm còn tệ hơn trước đó trong tiếng Nhật được gọi là "デグレード", nói gọn lại là "デグレ" (Degrade).   
 Để dễ hiểu hơn, bạn cứ tưởng tượng như thế này: lúc lập trình, xuất hiện tình trạng chức năng rõ ràng đã implement ok rồi mà giờ lại bị mất đi/ không hoạt động được, hay cái bug rõ ràng là đã loại bỏ đi rồi thì giờ lại xuất hiện lại.  
@@ -52,7 +62,7 @@ Phải thực hiện regression test mỗi khi chỉnh sửa phần mềm.
    Từ "エンバグ" này cũng giống với "デグレード", là một Wasei-eigo, nên đây là cách nói không tồn tại trong tiếng Anh.   
    Vì đây là sai sót khác với "リグレッション (Regression)" mang nghĩa "退行 - Giật lùi, đi ngược trở lại", nên cũng có người phân biệt từ này với "デグレード"
 
-###サービスイン (Service in)
+### サービスイン (Service in)
 
 Việc hệ thống mới bắt đầu đi vào hoạt động chính thức được gọi là "サービスイン", nhưng trong tiếng Anh, nếu dùng từ này thì người ta sẽ không hiểu.   
 Từ tương ứng với nghĩa này trong tiếng Anh là "go-live". Là danh từ thì có dấu gạch ngang ở giữa. Còn động từ thì có thể dùng "go live".  
@@ -62,13 +72,13 @@ Ex:
 このシステムは来月サービスインする予定です。  
 This system will go live next month.
 
-###カットオーバー (Cut over)
+### カットオーバー (Cut over)
 
 "カットオーバー" cũng được sử dụng với nghĩa gần như tương tự với từ "サービスイン" phía trên, nên ta có thể sử dụng "go-live", "release", "launch" để thể hiện ý nghĩa này.  
 Trong tiếng Anh cũng có từ "cut over", nhưng ý nghĩa hơi khác một chút. Trong khi "カットオーバー" trong tiếng Nhật chỉ thời điểm bắt đầu hoạt động hệ thống mới, thì "cut over" trong tiếng Anh là từ chỉ "giai đoạn chuyển từ hệ thống cũ sang hệ thống mới".   
 Trong khi từ "カットオーバー" trong tiếng Nhật thường dùng để chỉ "go-live" trong tiếng Anh, thì "cut over" trong tiếng Anh lại mang ý nghĩa là giai đoạn trước đó, nên khi trao đổi bằng tiếng Anh thì cần phải chú ý.
 
-###システムダウン (System down)
+### システムダウン (System down)
 
 Việc hệ thống bị dừng hoạt động hay tắt bất thường, ngoài mong muốn được gọi là "システムダウン". Trong tiếng Việt, chúng ta dùng cách nói "sập hệ thống", còn trong tiếng Anh thì không có cách diễn đặt bằng danh từ kiểu như "system down" như vậy.   
 Trong tiếng Anh, thường sử dụng cách nói "system failure" hay "system crash".
@@ -85,7 +95,7 @@ The inventory management system has been down since yesterday.
 停電のため、コンピュータシステムがダウンしました。    
 Our computer system went down due to a power outage.
 
-###アンダーバー (Underbar)
+### アンダーバー (Underbar)
 
 Dấu gạch dưới "_" trong tiếng Nhật thường được gọi là "アンダーバー", nhưng trong tiếng Anh thì gọi là "Underscore".
 
@@ -96,7 +106,7 @@ You can’t use an underscore in the domain name.
 iPadでアンダーバー記号を入力するにはどうすればよいですか？    
 How can I type an underscore symbol on iPad?
 
-###チャージ (Charge)
+### チャージ (Charge)
 
 Ở Nhật, người ta dùng khái niệm "チャージ" khi nạp tiền vào thẻ PASMO, SUICA,... Trong tiếng Việt, chúng ta cũng hay dùng cách nói tương tự là "charge tiền" đúng không nào?
 Nhưng thật sự thì trong tiếng Anh, họ không dùng từ charge để chỉ việc nạp tiền, tăng số dư trong thẻ đâu. Trong tiếng Anh, khái niệm này được diễn đạt bằng từ "refill" hoặc "top-up".
