@@ -11,4 +11,6 @@ order: 4
 ---
 
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+Hi. Mình là Anh Đào.   
+Blog này là nơi mình tổng hợp lại các kiến thức về kỹ thuật cũng như tiếng Nhật chuyên ngành IT dưới góc nhìn của một Comtor.   
+Mình rất vui nếu như blog này cũng giúp ích một phần nào đó cho bạn trên con đường học tập.
