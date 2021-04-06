@@ -5,7 +5,7 @@ date: 2021-03-20 23:50:00 +0700
 categories: [Japanese]
 tags: [wasei-eigo]
 ---
-###### [![](../../assets/2021-03-20-wasei-eigo/wasei-eigo.jpeg)](../../assets/2021-03-20-wasei-eigo/wasei-eigo.jpeg)
+![Wasei Eigo](../../assets/2021-03-20-wasei-eigo/wasei-eigo.jpeg)
 
 Sử dụng tiếng Nhật để làm việc trong ngành IT, chắc hẳn bạn sẽ dễ dàng nhận ra một đặc thù: có rất nhiều từ vựng chuyên ngành là từ Katakana. Hầu hết chúng đều bắt nguồn từ tiếng Anh. Và thông thường thì giữ nguyên tiếng Anh, không cố dịch ra tiếng Việt là lựa chọn khôn ngoan nhất.
 
