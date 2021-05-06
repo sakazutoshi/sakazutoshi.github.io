@@ -19,7 +19,7 @@ Trong chương này, ta sẽ đi tìm hiểu chi tiết xem, việc phát triể
 
 Ở các bước trong quy trình này, ta thực hiện những việc dưới đây:
 
-####Định nghĩa yêu cầu
+#### Định nghĩa yêu cầu
 Ở công đoạn đầu tiên trong phát triển hệ thống, dựa vào request từ bên đặt hàng là "Chúng tôi muốn có cái hệ thống có thể làm được những việc như thế này, để phục vụ cho mục đích như vầy",
 ta sẽ đi phân tích nghiệp vụ hiện tại, sắp xếp điều chỉnh lại yêu cầu hệ thống.
 
@@ -103,7 +103,7 @@ Việc kiểm tra này sẽ do bên người đặt hàng thực hiện. Tuy nhi
     → Answer: イ
     Giải thích: Ở ソフトウェア方式設計 (Software architecture design), ta sẽ quyết định kết hợp và hiện thực hóa phần mềm như thế nào
 
-*Note:   
+***Note:**   
 1/ ソフトウェア方式設計 là khái niệm chỉ có của Nhật. Mình đã thử search từ khóa tiếng Anh với ý nghĩa tương đồng, nhưng không có.  
 Có vẻ như họ định nghĩa 方式設計 là một phần trong khâu 基本設計 (Basic design)   
 基本設計 (Basic design) trong Hệ thống thông tin xuất phát từ 機能設計 (Functional design) - thứ định nghĩa "方式設計" 
@@ -111,7 +111,7 @@ quyết định cấu trúc (architect) phần cứng/ phần mềm và phương
 khi nhìn từ quan điểm của user (chức năng, màn hình, form nhập, dữ liệu).  
 Ngoài ra, cũng thực hiện thiết kế hiệu năng, độ tin cậy, hay thiết kế bảo mật, thiết kế migration, thiết kế operation...　　 
    
-Reference: https://blogs.itmedia.co.jp/omowaku/2007/10/post_129a.html
+Reference: [https://blogs.itmedia.co.jp/omowaku/2007/10/post_129a.html](https://blogs.itmedia.co.jp/omowaku/2007/10/post_129a.html)
 
 2/ Có một cách chia khác về giai đoạn thiết kế trong quá trình phát triển hệ thống, sau khi định nghĩa yêu cầu (要件定義).  
 Đó là: 基本設計・外部設計 (Basic design/ External design) → 詳細設計・内部設計 (Detailed design/ Internal design)   
@@ -139,12 +139,12 @@ Trong Detailed design/ Internal design thì có
 + Thiết kế physical data
 + Thiết kế chi tiết input, output
 
-Reference:
-https://qiita.com/mikakane/items/b8045a11dba8d08e5fe4
-https://tiengnhatmuonmau.com/post/622
+Reference:  
+[https://qiita.com/mikakane/items/b8045a11dba8d08e5fe4](https://qiita.com/mikakane/items/b8045a11dba8d08e5fe4)  
+[https://tiengnhatmuonmau.com/post/622](https://tiengnhatmuonmau.com/post/622)
 
-3/ Basic Design, Detailed design cũng là Wasei-eigo!!! [Xem bài viết trước đây về 和製英語] (https://sakazutoshi.com/posts/wasei-eigo/)  
-Ở trên, ta có bắt gặp khái niệm 方式設計, tương tự với khái niệm này thì 
+3/ Basic Design, Detailed design cũng là Wasei-eigo!!! [Xem bài viết trước đây về 和製英語](https://sakazutoshi.com/posts/wasei-eigo/)  
+Ở trên, ta có bắt gặp khái niệm 方式設計, tương tự với khái niệm này thì
 trong tiếng Nhật cũng có các từ như アーキテクチ設計, 概要設計, dịch ra tiếng Anh là Architecture design. 
 Ở Mỹ thì từ tương ứng sẽ là High-level design  
 
@@ -153,7 +153,7 @@ Từ sát nghĩa nhất sẽ là Functional Design (mô tả program cần làm 
 
 詳細設計 thì có lẽ cụm từ thích hợp nhất tương ứng trong tiếng Anh sẽ là Technical design (mô tả chức năng sẽ được implement như thế nào ở level code)  
 
-Reference: http://americanprojectmanagement.blogspot.com/2017/06/basic-design.html
+Reference: [http://americanprojectmanagement.blogspot.com/2017/06/basic-design.html](http://americanprojectmanagement.blogspot.com/2017/06/basic-design.html)
 
 
 
