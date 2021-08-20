@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Update theme
-        run: git submodule add -f themes/hugo-theme-stack https://github.com/CaiJimmy/hugo-theme-stack/
+        run: git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
