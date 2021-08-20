@@ -161,3 +161,7 @@ markup:
         startLevel: 2
     highlight:
         noClasses: false
+
+module:
+    imports:
+        - path: github.com/CaiJimmy/hugo-theme-stack
