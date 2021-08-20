@@ -161,7 +161,3 @@ markup:
         startLevel: 2
     highlight:
         noClasses: false
-
-module:
-    imports:
-        - path: themes/hugo-theme-stack
