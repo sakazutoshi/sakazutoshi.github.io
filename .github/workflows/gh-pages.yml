@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: include stub submodule to base repo
-        run:  /usr/bin/git submodule update --init
+        run:  ls -alt
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
