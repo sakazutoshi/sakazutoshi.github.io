@@ -1,2 +1,0 @@
-# sakazutoshi.github.io
-

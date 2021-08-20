@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sakura Blog</title><link>https://sakazutoshi.com/</link><description>Recent content on Sakura Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Mar 2021 17:00:00 +0000</lastBuildDate><atom:link href="https://sakazutoshi.com/index.xml" rel="self" type="application/rss+xml"/><item><title>FE Book_Chapter 5: System development_Lesson 5-1: Khái quát về Phát triển hệ thống</title><link>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</link><pubDate>Sun, 28 Mar 2021 17:00:00 +0000</pubDate><guid>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</guid><description>&lt;h3 id="quy-trình-phát-triển-hệ-thống">Quy trình phát triển hệ thống&lt;/h3>
+&lt;p>Hệ thống là cơ cấu kết hợp phần cứng và phần mềm, để chúng xử lý giúp ta những công việc nhất định nào đó. Có nhiều hệ thống
+khác nhau xung quanh chúng ta, ví dụ như hệ thống ATM ngân hàng, hay hệ thống đặt chỗ ngồi trên máy bay.
+Máy tính được sử dụng cho hệ thống không nhất thiết chỉ có 1 cái. Cũng có những hệ thống quy mô lớn, kết nối cả một mạng lưới nhiều máy tính.&lt;/p>
+&lt;p>Ta nhận yêu cầu từ bên đặt hàng, lên kế hoạch, thiết kế và phát triển hệ thống tùy theo yêu cầu. Sau khi hoàn thành ổn thỏa, sẽ vừa vận hành vừa bảo trì định kỳ, hết nhiệm vụ thì hủy bỏ.
+Có một quy trình xuyên suốt từ khi lên kế hoạch đến khi hủy bỏ trong hệ thống như vậy, nó được gọi là &lt;strong>System Life Cycle&lt;/strong>&lt;/p>
+&lt;p>Trong chương này, ta sẽ đi tìm hiểu chi tiết xem, việc phát triển hệ thống được thực hiện như thế nào. Các bước được thực hiện trong quá trình phát triển theo như flow dưới đây:&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 152; flex-basis: 364px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/development-flow.png" data-size="868x571">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/development-flow.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/development-flow_hu3b5dfcd692b9193672693503b25ec83b_121093_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/development-flow_hu3b5dfcd692b9193672693503b25ec83b_121093_1024x0_resize_box_3.png 1024w"
+width="868"
+height="571"
+loading="lazy"
+alt="Development_flow">
+&lt;/a>
+&lt;figcaption>Development_flow&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Ở các bước trong quy trình này, ta thực hiện những việc dưới đây:&lt;/p>
+&lt;h4 id="định-nghĩa-yêu-cầu">Định nghĩa yêu cầu&lt;/h4>
+&lt;p>Ở công đoạn đầu tiên trong phát triển hệ thống, dựa vào request từ bên đặt hàng là &amp;ldquo;Chúng tôi muốn có cái hệ thống có thể làm được những việc như thế này, để phục vụ cho mục đích như vầy&amp;rdquo;,
+ta sẽ đi phân tích nghiệp vụ hiện tại, sắp xếp điều chỉnh lại yêu cầu hệ thống.&lt;/p>
+&lt;p>※&lt;em>Hãy biết cả điều này nữa&lt;/em>&lt;/p>
+&lt;pre>&lt;code>*Yêu cầu phi chức năng (非機能要件)*
+Trong định nghĩa yêu cầu, ngoài những yêu cầu chức năng định nghĩa các chức năng cần thiết cho hệ thống,
+thì ta cũng định nghĩa cả những yêu cầu phi chức năng nữa.
+Ta sẽ làm rõ những yêu cầu chất lượng, yêu cầu kỹ thuật, yêu cầu vận hành/ thao tác... cần thiết để hiện thực hóa
+yêu cầu nghiệp vụ. Ví dụ như là tạo tiêu chuẩn phát triển phù hợp theo ngôn ngữ lập trình đang được sử dụng trong
+phát triển hệ thống.
+&lt;/code>&lt;/pre>
+&lt;h4 id="thiết-kế-hệ-thống">Thiết kế hệ thống&lt;/h4>
+&lt;p>Ta sẽ thiết kế hệ thống dựa theo định nghĩa yêu cầu. Ở bước thiết kế hệ thống, ta sẽ suy nghĩ những phần cứng
+và phần mềm cần thiết để đạt được mục đích hay chức năng của hệ thống sẽ là gì, rồi vẽ sơ đồ bố trí hay viết bản kế hoạch
+thể hiện việc sẽ kết hợp chúng lại như thế nào.&lt;br>
+Trong thiết kế phần mềm, việc thực hiện đầu tiên sẽ là Định nghĩa yêu cầu phần mềm (External design) - ソフトウェア要件定義
+(外部設計). Ta sẽ đi thiết kế dữ liệu logic, ví dụ như là thiết kế phần bề ngoài của hệ thống như màn hình nhập&amp;hellip;, hay lọc ra những mục
+dữ liệu cần thiết cho hệ thống, rồi quyết định cấu trúc hệ thống.&lt;br>
+Tiếp theo sẽ là Software architecture design (Internal design) - ソフトウェア方式設計 (内部設計). Dựa vào yêu cầu phần mềm đã quyết định
+ở công đoạn trước đó, ta sẽ thiết kế cơ cấu bên trong, đó là quyết định chu trình xử lý hay các chức năng tích hợp vào.
+Cuối cùng là Thiết kế chi tiết phần mềm (Detailed design) - ソフトウェア詳細設計 (詳細設計), ta sẽ đi thiết kế cấu trúc program.
+Để dễ dàng phân chia công việc và thực hiện lập trình, phần đông mọi người
+sẽ chia ra và thiết kế program đến mức đơn vị chi tiết hơn nữa gọi là module.&lt;/p>
+&lt;h4 id="lập-trình">Lập trình&lt;/h4>
+&lt;p>Dựa theo tài liệu thiết kế, tiến hành lập trình (coding), hoàn thiện các module.&lt;/p>
+&lt;h4 id="test">Test&lt;/h4>
+&lt;p>Tiến hành test theo giai đoạn, xem đơn lẻ các module, tổng thể phần mềm kết hợp các module lại có hoạt động theo đúng
+tài liệu thiết kế hay không.&lt;/p>
+&lt;h4 id="chấp-nhận-phần-mềm">Chấp nhận phần mềm&lt;/h4>
+&lt;p>Đưa vào sử dụng phần mềm trên môi trường phần cứng giống với khi vận hành thực tế, kiểm tra xem nó có hoạt động đúng hay không.
+Việc kiểm tra này sẽ do bên người đặt hàng thực hiện. Tuy nhiên, bên nhà cung cấp bán dịch vụ (phần mềm) cũng hỗ trợ nhiều thứ
+để có thể tiếp nhận được suôn sẻ, ví dụ như giải thích về cách sử dụng cho bên đặt hàng&amp;hellip;&lt;/p>
+&lt;p>※&lt;em>Chỗ này thường ra này!&lt;/em>&lt;/p>
+&lt;pre>&lt;code>*Thuật ngữ*
+[非機能要件] (Yêu cầu phi chức năng): làm rõ các yêu cầu chất lượng, kỹ thuật, vận hành, thao tác
+cần thiết để hiện thực hóa yêu cầu nghiệp vụ. Ví dụ như là tạo tiêu chuẩn phát triển...
+[ソフトウェア方式設計 (内部設計] (Software architecture design (Internal design)): thiết kế cơ cấu bên trong,
+xem sẽ hiện thực hóa yêu cầu phần mềm đã quyết định ở công đoạn trước đó như thế nào
+*Skill*
+→ Hãy hiểu được quy trình tổng thể, rằng ở các công đoạn trong các bước phát triển thì ta sẽ quyết định những gì
+và thực hiện những gì.
+&lt;/code>&lt;/pre>
+&lt;p>※&lt;em>Thử thách với bài test&lt;/em>&lt;/p>
+&lt;pre>&lt;code>(Fundamental Information Technology Engineer Examination　Mùa xuân năm Heisei 21)
+Đáp án nào dưới đây là phù hợp khi nói về công việc thực hiện ở công đoạn đầu tiên trong phát triển hệ thống?
+ア: Thiết kế cấu trúc bên trong của các program
+イ: Phân tích nghiệp vụ hiện tại, sắp xếp chỉnh lý yêu cầu hệ thống
+ウ: Chia nhỏ sub system đến đơn vị program, thiết kế chi tiết các program
+エ: Thiết kế user interface
+→ Answer: イ
+Giải thích: Khi phát triển hệ thống, việc thực hiện đầu tiên đó là Định nghĩa yêu cầu, đi phân tích nghiệp vụ hiện tại,
+sắp xếp lại xem mình sẽ phát triển hệ thống như thế nào.
+&lt;/code>&lt;/pre>
+&lt;p>※&lt;em>Thử thách với bài test&lt;/em>&lt;/p>
+&lt;pre>&lt;code>(Fundamental Information Technology Engineer Examination　Mùa thu năm Heisei 25)
+Giải thích cho định nghĩa yêu cầu phi chức năng là cái nào dưới đây?
+ア: Làm rõ các chức năng nghiệp vụ sẽ khó hiện thực hóa trên hệ thống, phải làm thủ công trong số các yêu cầu nghiệp vụ
+イ: Làm rõ các yêu cầu chất lượng, yêu cầu kỹ thuật, yêu cầu vận hành... cần thiết để hiện thực hóa yêu cầu nghiệp vụ
+ウ: Làm rõ các chức năng bị thiếu ở hệ thống hiện hành, để xác định được yêu cầu nghiệp vụ
+エ: Làm rõ tính tương thích của package đưa vào sử dụng mới, để hiện thực hóa yêu cầu nghiệp vụ
+→ Answer: イ
+Giải thích: Ở yêu cầu phi chức năng, ta sẽ làm rõ những yêu cầu chất lượng, kỹ thuật, vận hành, thao tác... cần thiết
+để hiện thực hóa yêu cầu nghiệp vụ.
+&lt;/code>&lt;/pre>
+&lt;p>※&lt;em>Thử thách với bài test&lt;/em>&lt;/p>
+&lt;pre>&lt;code>(Fundamental Information Technology Engineer Examination　Mùa xuân năm Heisei 25)
+Công việc cần phải làm ở ソフトウェア方式設計 (Software architecture design) trong quy trình phát triển là cái nào dưới đây?
+ア: Hỏi ý kiến khách hàng rồi quyết định spec
+イ: Quyết định sẽ hiện thực hóa yêu cầu phần mềm đã chốt trước đó như thế nào
+ウ: Chi tiết hóa để rõ ràng đến xử lý theo từng dòng program
+エ: Tổng hợp nội dung yêu cầu thành biểu đồ, bảng biểu,..., từng bước chi tiết hóa rồi phân tích
+→ Answer: イ
+Giải thích: Ở ソフトウェア方式設計 (Software architecture design), ta sẽ quyết định kết hợp và hiện thực hóa phần mềm như thế nào
+&lt;/code>&lt;/pre>
+&lt;p>*&lt;strong>Note:&lt;/strong>&lt;br>
+1/ ソフトウェア方式設計 là khái niệm chỉ có của Nhật. Mình đã thử search từ khóa tiếng Anh với ý nghĩa tương đồng, nhưng không có.&lt;br>
+Có vẻ như họ định nghĩa 方式設計 là một phần trong khâu 基本設計 (Basic design)&lt;br>
+基本設計 (Basic design) trong Hệ thống thông tin xuất phát từ 機能設計 (Functional design) - thứ định nghĩa &amp;ldquo;方式設計&amp;rdquo;
+quyết định cấu trúc (architect) phần cứng/ phần mềm và phương châm implement VÀ 外部仕様 (External specification) của hệ thống
+khi nhìn từ quan điểm của user (chức năng, màn hình, form nhập, dữ liệu).&lt;br>
+Ngoài ra, cũng thực hiện thiết kế hiệu năng, độ tin cậy, hay thiết kế bảo mật, thiết kế migration, thiết kế operation&amp;hellip;　　&lt;/p>
+&lt;p>Reference: &lt;a class="link" href="https://blogs.itmedia.co.jp/omowaku/2007/10/post_129a.html" target="_blank" rel="noopener"
+>https://blogs.itmedia.co.jp/omowaku/2007/10/post_129a.html&lt;/a>&lt;/p>
+&lt;p>2/ Có một cách chia khác về giai đoạn thiết kế trong quá trình phát triển hệ thống, sau khi định nghĩa yêu cầu (要件定義).&lt;br>
+Đó là: 基本設計・外部設計 (Basic design/ External design) → 詳細設計・内部設計 (Detailed design/ Internal design)&lt;br>
+Trong Basic design/ External design lại chia ra làm 3 loại nhỏ hơn nữa là 方式設計, 機能設計 và その他の設計&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>方式設計 (アーキテクチャ設計):&lt;br>
+Quyết định cấu trúc phần cứng/ phần mềm, phương châm implement&lt;br>
+→ Thiết kế Platform (Quyết định Infra, Middleware, Platform, Framework&amp;hellip;)&lt;br>
+→ Thiết kế Application, Architecture (Quyết định cấu trúc tổng thể của application)&lt;br>
+→ Quyết định tiêu chuẩn phát triển hay cách thức test&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>機能設計 (アプリケーション設計)&lt;br>
+Chia tổng thể hệ thống ra thành đơn vị module, quyết định external spec cho các module&lt;br>
+→ Thiết kế Business logic&lt;br>
+→ Thiết kế Database&lt;br>
+→ Thiết kế màn hình, form nhập&lt;br>
+→ Thiết kế batch&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>その他の設計&lt;br>
+→ Thiết kế hiệu năng, tính tin cậy&lt;br>
+→ Thiết kế migration (hệ thống/ nghiệp vụ)&lt;br>
+→ Thiết kế operation (hệ thống/ nghiệp vụ)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Trong Detailed design/ Internal design thì có&lt;/p>
+&lt;ul>
+&lt;li>Phân chia chức năng&lt;/li>
+&lt;li>Thiết kế physical data&lt;/li>
+&lt;li>Thiết kế chi tiết input, output&lt;/li>
+&lt;/ul>
+&lt;p>Reference:&lt;br>
+&lt;a class="link" href="https://qiita.com/mikakane/items/b8045a11dba8d08e5fe4" target="_blank" rel="noopener"
+>https://qiita.com/mikakane/items/b8045a11dba8d08e5fe4&lt;/a>&lt;br>
+&lt;a class="link" href="https://tiengnhatmuonmau.com/post/622" target="_blank" rel="noopener"
+>https://tiengnhatmuonmau.com/post/622&lt;/a>&lt;/p>
+&lt;p>3/ Basic Design, Detailed design cũng là Wasei-eigo!!! &lt;a class="link" href="https://sakazutoshi.com/posts/wasei-eigo/" target="_blank" rel="noopener"
+>Xem bài viết trước đây về 和製英語&lt;/a>&lt;br>
+Ở trên, ta có bắt gặp khái niệm 方式設計, tương tự với khái niệm này thì
+trong tiếng Nhật cũng có các từ như アーキテクチ設計, 概要設計, dịch ra tiếng Anh là Architecture design.
+Ở Mỹ thì từ tương ứng sẽ là High-level design&lt;/p>
+&lt;p>基本設計 dịch thẳng ra là Basic design, nhưng đây cũng là một từ Wasei-eigo. Các nước nói tiếng Anh không sử dụng từ như vậy.
+Từ sát nghĩa nhất sẽ là Functional Design (mô tả program cần làm những gì)&lt;/p>
+&lt;p>詳細設計 thì có lẽ cụm từ thích hợp nhất tương ứng trong tiếng Anh sẽ là Technical design (mô tả chức năng sẽ được implement như thế nào ở level code)&lt;/p>
+&lt;p>Reference: &lt;a class="link" href="http://americanprojectmanagement.blogspot.com/2017/06/basic-design.html" target="_blank" rel="noopener"
+>http://americanprojectmanagement.blogspot.com/2017/06/basic-design.html&lt;/a>&lt;/p></description></item><item><title>FE Book_Chapter 1: Hardware_Lesson 1-1: Hardware</title><link>https://sakazutoshi.com/p/fe-book_chapter-1-hardware_lesson-1-1-hardware/</link><pubDate>Sat, 27 Mar 2021 22:30:00 +0000</pubDate><guid>https://sakazutoshi.com/p/fe-book_chapter-1-hardware_lesson-1-1-hardware/</guid><description>&lt;h3 id="computer-là-gì">Computer là gì?&lt;/h3>
+&lt;p>Ngày nay, Computer (máy tính) được sử dụng trong hầu hết các thiết bị điện tử thông dụng như PC, máy chơi game, điện thoại di động,&amp;hellip;&lt;br>
+Vậy thì, vốn dĩ Computer là gì?&lt;br>
+Computer là cỗ máy làm thay cho con người chúng ta nhiều việc như thực hiện tính toán số lượng lớn, hay xử lý những dữ liệu phức tạp,&amp;hellip; Nhờ có máy tính, chúng ta tác nghiệp dễ dàng hơn, xử lý công việc một cách hiệu quả.&lt;/p>
+&lt;h3 id="hardware-và-software">Hardware và Software&lt;/h3>
+&lt;p>Yếu tố cấu thành máy tính được chia ra làm 2 loại lớn là Hardware (phần cứng) và Software (phần mềm). Để máy tính hoạt động được, cần phải có cả hai thứ này.&lt;br>
+Phần cứng là những thứ mang tính vật chất như màn hình, bàn phím. Phần mềm là chương trình hoạt động bên trong máy tính.&lt;/p>
+&lt;h3 id="các-loại-phần-cứng">Các loại phần cứng&lt;/h3>
+&lt;p>Trước tiên, ta sẽ đi vào giải thích về phần cứng.&lt;br>
+Máy tính cần có 5 loại phần cứng là: thiết bị nhập vào, thiết bị ghi nhớ, thiết bị điều khiển, thiết bị tính toán và thiết bị xuất ra.&lt;/p>
+&lt;p>Các loại phần cứng&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Thiết bị&lt;/th>
+&lt;th>Vai trò&lt;/th>
+&lt;th>Ví dụ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Thiết bị nhập vào&lt;/td>
+&lt;td>Kết nối với phần chính của máy tính, nhập vào dữ liệu hay chương trình&lt;/td>
+&lt;td>Bàn phím, chuột&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Thiết bị ghi nhớ&lt;/td>
+&lt;td>Lưu lại dữ liệu hay chương trình đã được nhập vào. Thường đặt ở bên trong phần chính của máy tính&lt;/td>
+&lt;td>Bộ nhớ, ổ đĩa cứng&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Thiết bị điều khiển&lt;/td>
+&lt;td>Lấy mệnh lệnh chương trình từ thiết bị ghi nhớ ra rồi diễn giải, điều khiển những phần cứng khác&lt;/td>
+&lt;td>CPU&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Thiết bị tính toán&lt;/td>
+&lt;td>Theo mệnh lệnh của chương trình, thực hiện tính toán đối với những dữ liệu đã lấy ra từ thiết bị ghi nhớ&lt;/td>
+&lt;td>CPU&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Thiết bị xuất ra&lt;/td>
+&lt;td>Hiển thị, in ra cho con người có thể thấy được những dữ liệu đã được tính toán bên trong phần chính của máy tính&lt;/td>
+&lt;td>Màn hình, máy in&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Dưới đây là sơ đồ diễn tả dữ liệu di chuyển như thế nào giữa 5 thiết bị
+&lt;figure style="flex-grow: 196; flex-basis: 472px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-1-hardware_lesson-1-1-hardware/flow-data.png" data-size="1134x576">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-1-hardware_lesson-1-1-hardware/flow-data.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-1-hardware_lesson-1-1-hardware/flow-data_hu7c30327d0eb86fe4cba1eb3309609997_157049_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-1-hardware_lesson-1-1-hardware/flow-data_hu7c30327d0eb86fe4cba1eb3309609997_157049_1024x0_resize_box_3.png 1024w"
+width="1134"
+height="576"
+loading="lazy"
+alt="Data flow">
+&lt;/a>
+&lt;figcaption>Data flow&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;h3 id="nguyên-lý-hoạt-động-của-máy-tính">Nguyên lý hoạt động của máy tính&lt;/h3>
+&lt;p>Máy tính ngày nay là do nhà toán học người Mỹ Neumann đề xướng, có những đặc điểm sau đây:&lt;/p>
+&lt;h4 id="phương-thức-chứa-program">Phương thức chứa program&lt;/h4>
+&lt;p>Là phương thức nạp trước chương trình (program) vào bộ nhớ chính, CPU sẽ vừa gọi ra vừa chạy lần lượt. Có thể thay đổi cả xử lý chạy nếu thay đổi chương trình bằng cách cho chương trình độc lập với phần cứng. Phương thức có lưu sẵn chương trình cũng được gọi là phương thức ghi nhớ chương trình (Stored program method)&lt;/p>
+&lt;p>※&lt;em>Chỗ này thường ra này!&lt;/em>&lt;/p>
+&lt;pre>&lt;code>*Thuật ngữ*
+[プログラム格納方式] (Stored program method): nạp chương trình vào bộ nhớ chính, CPU vừa gọi ra vừa chạy lần lượt
+&lt;/code>&lt;/pre>
+&lt;p>※&lt;em>Thử thách với bài test&lt;/em>&lt;/p>
+&lt;pre>&lt;code>(Fundamental Information Technology Engineer Examination　Mùa xuân năm Heisei 26)
+Phương thức CPU vừa gọi ra vừa chạy lần lượt chương trình đã được ghi vào bộ nhớ chính là gì?
+ア: 制御方式
+イ: アドレス指定方式
+ウ: 仮想記憶方式
+エ: プログラム格納方式
+→ Answer: エ
+&lt;/code>&lt;/pre></description></item><item><title>Hãy cẩn thận với Wasei-Eigo - tiếng Anh chế của người Nhật</title><link>https://sakazutoshi.com/p/h%C3%A3y-c%E1%BA%A9n-th%E1%BA%ADn-v%E1%BB%9Bi-wasei-eigo-ti%E1%BA%BFng-anh-ch%E1%BA%BF-c%E1%BB%A7a-ng%C6%B0%E1%BB%9Di-nh%E1%BA%ADt/</link><pubDate>Sat, 20 Mar 2021 23:50:00 +0000</pubDate><guid>https://sakazutoshi.com/p/h%C3%A3y-c%E1%BA%A9n-th%E1%BA%ADn-v%E1%BB%9Bi-wasei-eigo-ti%E1%BA%BFng-anh-ch%E1%BA%BF-c%E1%BB%A7a-ng%C6%B0%E1%BB%9Di-nh%E1%BA%ADt/</guid><description>&lt;p>&lt;figure style="flex-grow: 209; flex-basis: 502px">
+&lt;a href="https://sakazutoshi.com/p/h%C3%A3y-c%E1%BA%A9n-th%E1%BA%ADn-v%E1%BB%9Bi-wasei-eigo-ti%E1%BA%BFng-anh-ch%E1%BA%BF-c%E1%BB%A7a-ng%C6%B0%E1%BB%9Di-nh%E1%BA%ADt/wasei-eigo.jpeg" data-size="880x420">&lt;img src="https://sakazutoshi.com/p/h%C3%A3y-c%E1%BA%A9n-th%E1%BA%ADn-v%E1%BB%9Bi-wasei-eigo-ti%E1%BA%BFng-anh-ch%E1%BA%BF-c%E1%BB%A7a-ng%C6%B0%E1%BB%9Di-nh%E1%BA%ADt/wasei-eigo.jpeg"
+srcset="https://sakazutoshi.com/p/h%C3%A3y-c%E1%BA%A9n-th%E1%BA%ADn-v%E1%BB%9Bi-wasei-eigo-ti%E1%BA%BFng-anh-ch%E1%BA%BF-c%E1%BB%A7a-ng%C6%B0%E1%BB%9Di-nh%E1%BA%ADt/wasei-eigo_hue4061dab9af150946e172a410a9c07a4_67751_480x0_resize_q75_box.jpeg 480w, https://sakazutoshi.com/p/h%C3%A3y-c%E1%BA%A9n-th%E1%BA%ADn-v%E1%BB%9Bi-wasei-eigo-ti%E1%BA%BFng-anh-ch%E1%BA%BF-c%E1%BB%A7a-ng%C6%B0%E1%BB%9Di-nh%E1%BA%ADt/wasei-eigo_hue4061dab9af150946e172a410a9c07a4_67751_1024x0_resize_q75_box.jpeg 1024w"
+width="880"
+height="420"
+loading="lazy"
+alt="Wasei Eigo">
+&lt;/a>
+&lt;figcaption>Wasei Eigo&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Sử dụng tiếng Nhật để làm việc trong ngành IT, chắc hẳn bạn sẽ dễ dàng nhận ra một đặc thù: có rất nhiều từ vựng chuyên ngành là từ Katakana. Hầu hết chúng đều bắt nguồn từ tiếng Anh. Và thông thường thì giữ nguyên tiếng Anh, không cố dịch ra tiếng Việt là lựa chọn khôn ngoan nhất.&lt;/p>
+&lt;p>Tuy nhiên, khác với Gairaigo (外来語) - những từ ngoại lai được vay mượn trực tiếp từ ngôn ngữ nước ngoài và “may mắn” còn giữ được nguyên ngữ nghĩa của chúng khi “nhập khẩu”, thì người Nhật còn xào nấu tiếng Anh để sáng tạo nên một lớp từ vựng kiểu mới, nhìn thì có vẻ giống tiếng Anh đấy, nhưng thực chất thì nghĩa đã bị thay đổi từ một phần cho đến hoàn toàn so với nghĩa gốc ban đầu - chúng được gọi là Wasei-eigo (和製英語).&lt;/p>
+&lt;p>Lẽ dĩ nhiên, nếu người Nhật sử dụng y nguyên những từ Wasei-eigo này để giao tiếp với người nói tiếng Anh, thì người nghe cũng không thể nào hiểu được. Và với vai trò là cầu nối giữa hai bên Nhật - Việt, một IT Communicator cần phải chú ý khi gặp những từ vựng kiểu này, để có cách dịch chính xác và tự nhiên nhất. Hôm nay, mình sẽ giới thiệu một số từ Wasei-eigo thường được sử dụng trong ngành IT, và cách diễn đạt chúng trong tiếng Anh/ tiếng Việt nhé.&lt;/p>
+&lt;p>&lt;strong>Mục lục&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>[バージョンアップ (Version up)・バージョンダウン (Version down)](#バージョンアップ-(Version up)・バージョンダウン-(Version down))&lt;/li>
+&lt;li>&lt;a class="link" href="#%e3%83%87%e3%82%b0%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%83%bb%e3%83%87%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%83%bb%e3%83%87%e3%82%b0%e3%83%ac-%28Degradation,-Degrade%29" >デグレーション・デグレード・デグレ (Degradation, Degrade)&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%82%a4%e3%83%b3-%28Service-in%29" >サービスイン (Service in)&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#%e3%82%ab%e3%83%83%e3%83%88%e3%82%aa%e3%83%bc%e3%83%90%e3%83%bc-%28Cut-over%29" >カットオーバー (Cut over)&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%83%80%e3%82%a6%e3%83%b3-%28System-down%29" >システムダウン (System down)&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#%e3%82%a2%e3%83%b3%e3%83%80%e3%83%bc%e3%83%90%e3%83%bc-%28Underbar%29" >アンダーバー (Underbar)&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#%e3%83%81%e3%83%a3%e3%83%bc%e3%82%b8-%28Charge%29" >チャージ (Charge)&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;h3 id="バージョンアップ-version-upバージョンダウン-version-down">バージョンアップ (Version up)・バージョンダウン (Version down)&lt;/h3>
+&lt;p>Khi một từ Wasei-eigo có chữ &amp;ldquo;up&amp;rdquo; hay “down” đứng sau, nó có nghĩa là &amp;ldquo;tăng lên&amp;rdquo;, &amp;ldquo;cải thiện&amp;rdquo; hay “làm giảm”, “hạ xuống” thứ gì đó.
+Vì vậy, có thể dễ dàng đoán được Version up nghĩa là nâng cấp phần mềm lên phiên bản mới hơn, Version down nghĩa là hạ phần mềm xuống lại phiên bản cũ hơn.&lt;br>
+Có nhiều người vẫn giữ nguyên như vậy khi dịch qua tiếng Anh, tuy nhiên thật sự thì đây là một từ Wasei-eigo, và trong tiếng Anh không tồn tại cách nói như vậy.&lt;br>
+Trong tiếng Anh, khái niệm này được gọi là &amp;ldquo;Upgrade (version)&amp;rdquo;, &amp;ldquo;Downgrade (version)&amp;rdquo;.&lt;/p>
+&lt;p>Ex:&lt;br>
+お使いのブラウザを最新版にバージョンアップしてください。&lt;br>
+Please upgrade your browser to the latest version.&lt;/p>
+&lt;p>バージョンダウンすることによってレイアウトや見た目が変わる場合があります。&lt;br>
+Có trường hợp layout hay bề ngoài sẽ thay đổi do downgrade&lt;/p>
+&lt;h3 id="デグレーションデグレードデグレ-degradation-degrade">デグレーション・デグレード・デグレ (Degradation, Degrade)&lt;/h3>
+&lt;p>Việc xuất hiện bug khác do ảnh hưởng khi thay đổi, chỉnh sửa một phần nào đó trong program, khiến chất lượng sản phẩm còn tệ hơn trước đó trong tiếng Nhật được gọi là &amp;ldquo;デグレード&amp;rdquo;, nói gọn lại là &amp;ldquo;デグレ&amp;rdquo; (Degrade).&lt;br>
+Để dễ hiểu hơn, bạn cứ tưởng tượng như thế này: lúc lập trình, xuất hiện tình trạng chức năng rõ ràng đã implement ok rồi mà giờ lại bị mất đi/ không hoạt động được, hay cái bug rõ ràng là đã loại bỏ đi rồi thì giờ lại xuất hiện lại.&lt;br>
+Ngoài ra, việc kiểm thử được thực hiện để đảm bảo xem có xảy ra tình trạng như vậy hay không được gọi là &amp;ldquo;デグレードテスト&amp;rdquo; (Degrade test), &amp;ldquo;ノンデグレードテスト&amp;rdquo; (Non derade test)&amp;hellip;&lt;/p>
+&lt;p>Tuy nhiên, từ &amp;ldquo;デグレード&amp;rdquo; này là một từ Wasei-eigo chỉ có thể hiểu được khi dùng trong ngành IT của Nhật thôi.&lt;br>
+Trong tiếng Anh, hiện tượng như trên được gọi là &amp;ldquo;Regression&amp;rdquo;, và việc kiểm thử hiện tượng đó được gọi là &amp;ldquo;Regression testing&amp;rdquo;.&lt;/p>
+&lt;p>Từ &amp;ldquo;Degrade&amp;rdquo; trong tiếng Anh là một động từ mang ý nghĩa làm giảm giá trị, làm giảm chất lượng, nên cách sử dụng trong ngữ cảnh như trên cũng không hợp lý nhỉ.&lt;br>
+Thêm nữa, cũng có khi ta bắt gặp từ &amp;ldquo;デグレーション&amp;rdquo;, nhưng trong tiếng Anh thì danh từ của &amp;ldquo;degrade&amp;rdquo; là &amp;ldquo;degradation&amp;rdquo;, chứ không hề tồn tại từ &amp;ldquo;degration&amp;rdquo;.&lt;/p>
+&lt;p>Ex:&lt;br>
+ソフトウェアの修正を行うたびに、デグレードテストを実施しなければなりません。 &lt;br>
+Phải thực hiện regression test mỗi khi chỉnh sửa phần mềm.&lt;/p>
+&lt;p>※Thông tin thêm: Có người còn chia デグレード ra hai loại như sau:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&amp;ldquo;先祖返り&amp;rdquo; (せんぞがえり)&lt;br>
+Khi upgrade version, chức năng vốn đã sửa rồi lại quay trở về version trước đó.&lt;br>
+Nói một cách cụ thể hơn về khái niệm này là: do có sai sót, nhầm lẫn trong việc quản lý version, mà chức năng chắc chắn đã làm thêm rồi giờ bị biến mất, hay cái bug vốn đã fix rồi giờ lại bị lại.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&amp;ldquo;エンバグ&amp;rdquo; (Enbug)&lt;br>
+Do thay đổi source code để fix bug hay thêm chức năng mà lại tạo ra bug khác trước giờ chưa có được gọi là &amp;ldquo;エンバグ&amp;rdquo;.&lt;br>
+Từ &amp;ldquo;エンバグ&amp;rdquo; này cũng giống với &amp;ldquo;デグレード&amp;rdquo;, là một Wasei-eigo, nên đây là cách nói không tồn tại trong tiếng Anh.&lt;br>
+Vì đây là sai sót khác với &amp;ldquo;リグレッション (Regression)&amp;rdquo; mang nghĩa &amp;ldquo;退行 - Giật lùi, đi ngược trở lại&amp;rdquo;, nên cũng có người phân biệt từ này với &amp;ldquo;デグレード&amp;rdquo;&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="サービスイン-service-in">サービスイン (Service in)&lt;/h3>
+&lt;p>Việc hệ thống mới bắt đầu đi vào hoạt động chính thức được gọi là &amp;ldquo;サービスイン&amp;rdquo;, nhưng trong tiếng Anh, nếu dùng từ này thì người ta sẽ không hiểu.&lt;br>
+Từ tương ứng với nghĩa này trong tiếng Anh là &amp;ldquo;go-live&amp;rdquo;. Là danh từ thì có dấu gạch ngang ở giữa. Còn động từ thì có thể dùng &amp;ldquo;go live&amp;rdquo;.&lt;br>
+Ngoài ra, cũng có thể sử dụng từ &amp;ldquo;release&amp;rdquo; hay &amp;ldquo;launch&amp;rdquo; với nghĩa tương tự.&lt;/p>
+&lt;p>Ex: &lt;br>
+このシステムは来月サービスインする予定です。&lt;br>
+This system will go live next month.&lt;/p>
+&lt;h3 id="カットオーバー-cut-over">カットオーバー (Cut over)&lt;/h3>
+&lt;p>&amp;ldquo;カットオーバー&amp;rdquo; cũng được sử dụng với nghĩa gần như tương tự với từ &amp;ldquo;サービスイン&amp;rdquo; phía trên, nên ta có thể sử dụng &amp;ldquo;go-live&amp;rdquo;, &amp;ldquo;release&amp;rdquo;, &amp;ldquo;launch&amp;rdquo; để thể hiện ý nghĩa này.&lt;br>
+Trong tiếng Anh cũng có từ &amp;ldquo;cut over&amp;rdquo;, nhưng ý nghĩa hơi khác một chút. Trong khi &amp;ldquo;カットオーバー&amp;rdquo; trong tiếng Nhật chỉ thời điểm bắt đầu hoạt động hệ thống mới, thì &amp;ldquo;cut over&amp;rdquo; trong tiếng Anh là từ chỉ &amp;ldquo;giai đoạn chuyển từ hệ thống cũ sang hệ thống mới&amp;rdquo;.&lt;br>
+Trong khi từ &amp;ldquo;カットオーバー&amp;rdquo; trong tiếng Nhật thường dùng để chỉ &amp;ldquo;go-live&amp;rdquo; trong tiếng Anh, thì &amp;ldquo;cut over&amp;rdquo; trong tiếng Anh lại mang ý nghĩa là giai đoạn trước đó, nên khi trao đổi bằng tiếng Anh thì cần phải chú ý.&lt;/p>
+&lt;h3 id="システムダウン-system-down">システムダウン (System down)&lt;/h3>
+&lt;p>Việc hệ thống bị dừng hoạt động hay tắt bất thường, ngoài mong muốn được gọi là &amp;ldquo;システムダウン&amp;rdquo;. Trong tiếng Việt, chúng ta dùng cách nói &amp;ldquo;sập hệ thống&amp;rdquo;, còn trong tiếng Anh thì không có cách diễn đặt bằng danh từ kiểu như &amp;ldquo;system down&amp;rdquo; như vậy.&lt;br>
+Trong tiếng Anh, thường sử dụng cách nói &amp;ldquo;system failure&amp;rdquo; hay &amp;ldquo;system crash&amp;rdquo;.&lt;/p>
+&lt;p>Ex: &lt;br>
+システムダウンによりご不便をおかけして申し訳ございません。&lt;br>
+We apologize for any inconvenience caused by the system failure.&lt;/p>
+&lt;p>Còn khi sử dụng từ &amp;ldquo;down&amp;rdquo;, thì sẽ diễn đạt theo kiểu &amp;ldquo;động từ tobe + down&amp;rdquo; hay &amp;ldquo;go down&amp;rdquo;.&lt;/p>
+&lt;p>昨日から在庫管理システムがダウンしています。 &lt;br>
+The inventory management system has been down since yesterday.&lt;/p>
+&lt;p>停電のため、コンピュータシステムがダウンしました。 &lt;br>
+Our computer system went down due to a power outage.&lt;/p>
+&lt;h3 id="アンダーバー-underbar">アンダーバー (Underbar)&lt;/h3>
+&lt;p>Dấu gạch dưới &amp;ldquo;_&amp;rdquo; trong tiếng Nhật thường được gọi là &amp;ldquo;アンダーバー&amp;rdquo;, nhưng trong tiếng Anh thì gọi là &amp;ldquo;Underscore&amp;rdquo;.&lt;/p>
+&lt;p>Ex:&lt;br>
+ドメイン名にアンダーバーを使うことはできません。 &lt;br>
+You can’t use an underscore in the domain name.&lt;/p>
+&lt;p>iPadでアンダーバー記号を入力するにはどうすればよいですか？ &lt;br>
+How can I type an underscore symbol on iPad?&lt;/p>
+&lt;h3 id="チャージ-charge">チャージ (Charge)&lt;/h3>
+&lt;p>Ở Nhật, người ta dùng khái niệm &amp;ldquo;チャージ&amp;rdquo; khi nạp tiền vào thẻ PASMO, SUICA,&amp;hellip; Trong tiếng Việt, chúng ta cũng hay dùng cách nói tương tự là &amp;ldquo;charge tiền&amp;rdquo; đúng không nào?
+Nhưng thật sự thì trong tiếng Anh, họ không dùng từ charge để chỉ việc nạp tiền, tăng số dư trong thẻ đâu. Trong tiếng Anh, khái niệm này được diễn đạt bằng từ &amp;ldquo;refill&amp;rdquo; hoặc &amp;ldquo;top-up&amp;rdquo;.&lt;/p>
+&lt;p>Ex: &lt;br>
+PASMOカードは何度でも繰り返し入金できます。&lt;br>
+You can refill your PASMO card as many times as desired.&lt;/p>
+&lt;p>Vẫn còn rất rất nhiều từ Wasei-eigo nữa, mình không thể nào liệt kê hết được (thậm chí, có rất nhiều từ mà người Nhật cũng không biết chúng là Wasei-eigo đâu).&lt;br>
+Mỗi dự án chúng ta làm đều có những từ vựng riêng ứng với chuyên ngành, nghiệp vụ mà hệ thống đó phục vụ. Vì vậy, nếu có bắt gặp những từ vựng mới là Katakana, thì đừng vội vàng dịch chúng ra ngay, mà hãy cẩn thận tìm hiểu, rồi đưa ra cách dịch đúng, phù hợp nhất nhé ^^&lt;/p></description></item></channel></rss>

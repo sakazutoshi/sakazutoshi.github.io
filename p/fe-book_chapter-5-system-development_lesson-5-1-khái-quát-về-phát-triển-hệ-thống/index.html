@@ -1,0 +1,285 @@
+<!doctype html><html lang=en-us>
+<head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Quy trình phát triển hệ thống Hệ thống là cơ cấu kết hợp phần cứng và phần mềm, để chúng xử lý giúp ta những công việc nhất định nào đó. Có nhiều hệ thống khác nhau xung quanh chúng ta, ví dụ như hệ thống ATM ngân hàng, hay hệ thống đặt chỗ ngồi trên máy bay. Máy tính được sử dụng cho hệ thống không nhất thiết chỉ có 1 cái."><title>FE Book_Chapter 5: System development_Lesson 5-1: Khái quát về Phát triển hệ thống</title>
+<link rel=canonical href=https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/>
+<link rel=stylesheet href=/scss/style.min.css><meta property="og:title" content="FE Book_Chapter 5: System development_Lesson 5-1: Khái quát về Phát triển hệ thống">
+<meta property="og:description" content="Quy trình phát triển hệ thống Hệ thống là cơ cấu kết hợp phần cứng và phần mềm, để chúng xử lý giúp ta những công việc nhất định nào đó. Có nhiều hệ thống khác nhau xung quanh chúng ta, ví dụ như hệ thống ATM ngân hàng, hay hệ thống đặt chỗ ngồi trên máy bay. Máy tính được sử dụng cho hệ thống không nhất thiết chỉ có 1 cái.">
+<meta property="og:url" content="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/">
+<meta property="og:site_name" content="Sakura Blog">
+<meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="system_development"><meta property="article:published_time" content="2021-03-28T17:00:00+00:00"><meta property="article:modified_time" content="2021-03-28T17:00:00+00:00">
+<meta name=twitter:title content="FE Book_Chapter 5: System development_Lesson 5-1: Khái quát về Phát triển hệ thống">
+<meta name=twitter:description content="Quy trình phát triển hệ thống Hệ thống là cơ cấu kết hợp phần cứng và phần mềm, để chúng xử lý giúp ta những công việc nhất định nào đó. Có nhiều hệ thống khác nhau xung quanh chúng ta, ví dụ như hệ thống ATM ngân hàng, hay hệ thống đặt chỗ ngồi trên máy bay. Máy tính được sử dụng cho hệ thống không nhất thiết chỉ có 1 cái.">
+<link rel="shortcut icon" href=/favicon.ico>
+</head>
+<body class="article-page has-toc">
+<script>(function(){const a='StackColorScheme';localStorage.getItem(a)||localStorage.setItem(a,"auto")})()</script><script>(function(){const b='StackColorScheme',a=localStorage.getItem(b),c=window.matchMedia('(prefers-color-scheme: dark)').matches===!0;a=='dark'||a==='auto'&&c?document.documentElement.dataset.scheme='dark':document.documentElement.dataset.scheme='light'})()</script>
+<div class="container main-container flex
+extended">
+<div id=article-toolbar>
+<a href=https://sakazutoshi.com class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg>
+<span>Back</span>
+</a>
+</div>
+<main class="main full-width">
+<article class=main-article>
+<header class=article-header>
+<div class=article-details>
+<header class=article-category>
+<a href=/categories/fe_book/>
+FE_Book
+</a>
+</header>
+<h2 class=article-title>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/>FE Book_Chapter 5: System development_Lesson 5-1: Khái quát về Phát triển hệ thống</a>
+</h2>
+<footer class=article-time>
+<div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>Mar 28, 2021</time>
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>
+9 min read
+</time>
+</div>
+</footer>
+</div>
+</header>
+<section class=article-content>
+<h3 id=quy-trình-phát-triển-hệ-thống>Quy trình phát triển hệ thống</h3>
+<p>Hệ thống là cơ cấu kết hợp phần cứng và phần mềm, để chúng xử lý giúp ta những công việc nhất định nào đó. Có nhiều hệ thống
+khác nhau xung quanh chúng ta, ví dụ như hệ thống ATM ngân hàng, hay hệ thống đặt chỗ ngồi trên máy bay.
+Máy tính được sử dụng cho hệ thống không nhất thiết chỉ có 1 cái. Cũng có những hệ thống quy mô lớn, kết nối cả một mạng lưới nhiều máy tính.</p>
+<p>Ta nhận yêu cầu từ bên đặt hàng, lên kế hoạch, thiết kế và phát triển hệ thống tùy theo yêu cầu. Sau khi hoàn thành ổn thỏa, sẽ vừa vận hành vừa bảo trì định kỳ, hết nhiệm vụ thì hủy bỏ.
+Có một quy trình xuyên suốt từ khi lên kế hoạch đến khi hủy bỏ trong hệ thống như vậy, nó được gọi là <strong>System Life Cycle</strong></p>
+<p>Trong chương này, ta sẽ đi tìm hiểu chi tiết xem, việc phát triển hệ thống được thực hiện như thế nào. Các bước được thực hiện trong quá trình phát triển theo như flow dưới đây:</p>
+<p><figure style=flex-grow:152;flex-basis:364px>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/development-flow.png data-size=868x571><img src=/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/development-flow.png srcset="/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/development-flow_hu3b5dfcd692b9193672693503b25ec83b_121093_480x0_resize_box_3.png 480w, /p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/development-flow_hu3b5dfcd692b9193672693503b25ec83b_121093_1024x0_resize_box_3.png 1024w" width=868 height=571 loading=lazy alt=Development_flow>
+</a>
+<figcaption>Development_flow</figcaption>
+</figure></p>
+<p>Ở các bước trong quy trình này, ta thực hiện những việc dưới đây:</p>
+<h4 id=định-nghĩa-yêu-cầu>Định nghĩa yêu cầu</h4>
+<p>Ở công đoạn đầu tiên trong phát triển hệ thống, dựa vào request từ bên đặt hàng là &ldquo;Chúng tôi muốn có cái hệ thống có thể làm được những việc như thế này, để phục vụ cho mục đích như vầy&rdquo;,
+ta sẽ đi phân tích nghiệp vụ hiện tại, sắp xếp điều chỉnh lại yêu cầu hệ thống.</p>
+<p>※<em>Hãy biết cả điều này nữa</em></p>
+<pre><code>*Yêu cầu phi chức năng (非機能要件)*
+Trong định nghĩa yêu cầu, ngoài những yêu cầu chức năng định nghĩa các chức năng cần thiết cho hệ thống,
+thì ta cũng định nghĩa cả những yêu cầu phi chức năng nữa.
+Ta sẽ làm rõ những yêu cầu chất lượng, yêu cầu kỹ thuật, yêu cầu vận hành/ thao tác... cần thiết để hiện thực hóa 
+yêu cầu nghiệp vụ. Ví dụ như là tạo tiêu chuẩn phát triển phù hợp theo ngôn ngữ lập trình đang được sử dụng trong 
+phát triển hệ thống.
+</code></pre>
+<h4 id=thiết-kế-hệ-thống>Thiết kế hệ thống</h4>
+<p>Ta sẽ thiết kế hệ thống dựa theo định nghĩa yêu cầu. Ở bước thiết kế hệ thống, ta sẽ suy nghĩ những phần cứng
+và phần mềm cần thiết để đạt được mục đích hay chức năng của hệ thống sẽ là gì, rồi vẽ sơ đồ bố trí hay viết bản kế hoạch
+thể hiện việc sẽ kết hợp chúng lại như thế nào.<br>
+Trong thiết kế phần mềm, việc thực hiện đầu tiên sẽ là Định nghĩa yêu cầu phần mềm (External design) - ソフトウェア要件定義
+(外部設計). Ta sẽ đi thiết kế dữ liệu logic, ví dụ như là thiết kế phần bề ngoài của hệ thống như màn hình nhập&mldr;, hay lọc ra những mục
+dữ liệu cần thiết cho hệ thống, rồi quyết định cấu trúc hệ thống.<br>
+Tiếp theo sẽ là Software architecture design (Internal design) - ソフトウェア方式設計 (内部設計). Dựa vào yêu cầu phần mềm đã quyết định
+ở công đoạn trước đó, ta sẽ thiết kế cơ cấu bên trong, đó là quyết định chu trình xử lý hay các chức năng tích hợp vào.
+Cuối cùng là Thiết kế chi tiết phần mềm (Detailed design) - ソフトウェア詳細設計 (詳細設計), ta sẽ đi thiết kế cấu trúc program.
+Để dễ dàng phân chia công việc và thực hiện lập trình, phần đông mọi người
+sẽ chia ra và thiết kế program đến mức đơn vị chi tiết hơn nữa gọi là module.</p>
+<h4 id=lập-trình>Lập trình</h4>
+<p>Dựa theo tài liệu thiết kế, tiến hành lập trình (coding), hoàn thiện các module.</p>
+<h4 id=test>Test</h4>
+<p>Tiến hành test theo giai đoạn, xem đơn lẻ các module, tổng thể phần mềm kết hợp các module lại có hoạt động theo đúng
+tài liệu thiết kế hay không.</p>
+<h4 id=chấp-nhận-phần-mềm>Chấp nhận phần mềm</h4>
+<p>Đưa vào sử dụng phần mềm trên môi trường phần cứng giống với khi vận hành thực tế, kiểm tra xem nó có hoạt động đúng hay không.
+Việc kiểm tra này sẽ do bên người đặt hàng thực hiện. Tuy nhiên, bên nhà cung cấp bán dịch vụ (phần mềm) cũng hỗ trợ nhiều thứ
+để có thể tiếp nhận được suôn sẻ, ví dụ như giải thích về cách sử dụng cho bên đặt hàng&mldr;</p>
+<p>※<em>Chỗ này thường ra này!</em></p>
+<pre><code>*Thuật ngữ*
+[非機能要件] (Yêu cầu phi chức năng): làm rõ các yêu cầu chất lượng, kỹ thuật, vận hành, thao tác 
+cần thiết để hiện thực hóa yêu cầu nghiệp vụ. Ví dụ như là tạo tiêu chuẩn phát triển...
+[ソフトウェア方式設計 (内部設計] (Software architecture design (Internal design)): thiết kế cơ cấu bên trong, 
+xem sẽ hiện thực hóa yêu cầu phần mềm đã quyết định ở công đoạn trước đó như thế nào
+*Skill*
+→ Hãy hiểu được quy trình tổng thể, rằng ở các công đoạn trong các bước phát triển thì ta sẽ quyết định những gì 
+và thực hiện những gì.
+</code></pre>
+<p>※<em>Thử thách với bài test</em></p>
+<pre><code>(Fundamental Information Technology Engineer Examination　Mùa xuân năm Heisei 21)
+Đáp án nào dưới đây là phù hợp khi nói về công việc thực hiện ở công đoạn đầu tiên trong phát triển hệ thống?
+ア: Thiết kế cấu trúc bên trong của các program
+イ: Phân tích nghiệp vụ hiện tại, sắp xếp chỉnh lý yêu cầu hệ thống
+ウ: Chia nhỏ sub system đến đơn vị program, thiết kế chi tiết các program
+エ: Thiết kế user interface
+→ Answer: イ
+Giải thích: Khi phát triển hệ thống, việc thực hiện đầu tiên đó là Định nghĩa yêu cầu, đi phân tích nghiệp vụ hiện tại, 
+sắp xếp lại xem mình sẽ phát triển hệ thống như thế nào.
+</code></pre>
+<p>※<em>Thử thách với bài test</em></p>
+<pre><code>(Fundamental Information Technology Engineer Examination　Mùa thu năm Heisei 25)
+Giải thích cho định nghĩa yêu cầu phi chức năng là cái nào dưới đây?
+ア: Làm rõ các chức năng nghiệp vụ sẽ khó hiện thực hóa trên hệ thống, phải làm thủ công trong số các yêu cầu nghiệp vụ
+イ: Làm rõ các yêu cầu chất lượng, yêu cầu kỹ thuật, yêu cầu vận hành... cần thiết để hiện thực hóa yêu cầu nghiệp vụ
+ウ: Làm rõ các chức năng bị thiếu ở hệ thống hiện hành, để xác định được yêu cầu nghiệp vụ
+エ: Làm rõ tính tương thích của package đưa vào sử dụng mới, để hiện thực hóa yêu cầu nghiệp vụ
+→ Answer: イ
+Giải thích: Ở yêu cầu phi chức năng, ta sẽ làm rõ những yêu cầu chất lượng, kỹ thuật, vận hành, thao tác... cần thiết 
+để hiện thực hóa yêu cầu nghiệp vụ.
+</code></pre>
+<p>※<em>Thử thách với bài test</em></p>
+<pre><code>(Fundamental Information Technology Engineer Examination　Mùa xuân năm Heisei 25)
+Công việc cần phải làm ở ソフトウェア方式設計 (Software architecture design) trong quy trình phát triển là cái nào dưới đây?
+ア: Hỏi ý kiến khách hàng rồi quyết định spec
+イ: Quyết định sẽ hiện thực hóa yêu cầu phần mềm đã chốt trước đó như thế nào
+ウ: Chi tiết hóa để rõ ràng đến xử lý theo từng dòng program
+エ: Tổng hợp nội dung yêu cầu thành biểu đồ, bảng biểu,..., từng bước chi tiết hóa rồi phân tích 
+→ Answer: イ
+Giải thích: Ở ソフトウェア方式設計 (Software architecture design), ta sẽ quyết định kết hợp và hiện thực hóa phần mềm như thế nào
+</code></pre>
+<p>*<strong>Note:</strong><br>
+1/ ソフトウェア方式設計 là khái niệm chỉ có của Nhật. Mình đã thử search từ khóa tiếng Anh với ý nghĩa tương đồng, nhưng không có.<br>
+Có vẻ như họ định nghĩa 方式設計 là một phần trong khâu 基本設計 (Basic design)<br>
+基本設計 (Basic design) trong Hệ thống thông tin xuất phát từ 機能設計 (Functional design) - thứ định nghĩa &ldquo;方式設計&rdquo;
+quyết định cấu trúc (architect) phần cứng/ phần mềm và phương châm implement VÀ 外部仕様 (External specification) của hệ thống
+khi nhìn từ quan điểm của user (chức năng, màn hình, form nhập, dữ liệu).<br>
+Ngoài ra, cũng thực hiện thiết kế hiệu năng, độ tin cậy, hay thiết kế bảo mật, thiết kế migration, thiết kế operation&mldr;　　</p>
+<p>Reference: <a class=link href=https://blogs.itmedia.co.jp/omowaku/2007/10/post_129a.html target=_blank rel=noopener>https://blogs.itmedia.co.jp/omowaku/2007/10/post_129a.html</a></p>
+<p>2/ Có một cách chia khác về giai đoạn thiết kế trong quá trình phát triển hệ thống, sau khi định nghĩa yêu cầu (要件定義).<br>
+Đó là: 基本設計・外部設計 (Basic design/ External design) → 詳細設計・内部設計 (Detailed design/ Internal design)<br>
+Trong Basic design/ External design lại chia ra làm 3 loại nhỏ hơn nữa là 方式設計, 機能設計 và その他の設計</p>
+<ul>
+<li>
+<p>方式設計 (アーキテクチャ設計):<br>
+Quyết định cấu trúc phần cứng/ phần mềm, phương châm implement<br>
+→ Thiết kế Platform (Quyết định Infra, Middleware, Platform, Framework&mldr;)<br>
+→ Thiết kế Application, Architecture (Quyết định cấu trúc tổng thể của application)<br>
+→ Quyết định tiêu chuẩn phát triển hay cách thức test</p>
+</li>
+<li>
+<p>機能設計 (アプリケーション設計)<br>
+Chia tổng thể hệ thống ra thành đơn vị module, quyết định external spec cho các module<br>
+→ Thiết kế Business logic<br>
+→ Thiết kế Database<br>
+→ Thiết kế màn hình, form nhập<br>
+→ Thiết kế batch</p>
+</li>
+<li>
+<p>その他の設計<br>
+→ Thiết kế hiệu năng, tính tin cậy<br>
+→ Thiết kế migration (hệ thống/ nghiệp vụ)<br>
+→ Thiết kế operation (hệ thống/ nghiệp vụ)</p>
+</li>
+</ul>
+<p>Trong Detailed design/ Internal design thì có</p>
+<ul>
+<li>Phân chia chức năng</li>
+<li>Thiết kế physical data</li>
+<li>Thiết kế chi tiết input, output</li>
+</ul>
+<p>Reference:<br>
+<a class=link href=https://qiita.com/mikakane/items/b8045a11dba8d08e5fe4 target=_blank rel=noopener>https://qiita.com/mikakane/items/b8045a11dba8d08e5fe4</a><br>
+<a class=link href=https://tiengnhatmuonmau.com/post/622 target=_blank rel=noopener>https://tiengnhatmuonmau.com/post/622</a></p>
+<p>3/ Basic Design, Detailed design cũng là Wasei-eigo!!! <a class=link href=https://sakazutoshi.com/posts/wasei-eigo/ target=_blank rel=noopener>Xem bài viết trước đây về 和製英語</a><br>
+Ở trên, ta có bắt gặp khái niệm 方式設計, tương tự với khái niệm này thì
+trong tiếng Nhật cũng có các từ như アーキテクチ設計, 概要設計, dịch ra tiếng Anh là Architecture design.
+Ở Mỹ thì từ tương ứng sẽ là High-level design</p>
+<p>基本設計 dịch thẳng ra là Basic design, nhưng đây cũng là một từ Wasei-eigo. Các nước nói tiếng Anh không sử dụng từ như vậy.
+Từ sát nghĩa nhất sẽ là Functional Design (mô tả program cần làm những gì)</p>
+<p>詳細設計 thì có lẽ cụm từ thích hợp nhất tương ứng trong tiếng Anh sẽ là Technical design (mô tả chức năng sẽ được implement như thế nào ở level code)</p>
+<p>Reference: <a class=link href=http://americanprojectmanagement.blogspot.com/2017/06/basic-design.html target=_blank rel=noopener>http://americanprojectmanagement.blogspot.com/2017/06/basic-design.html</a></p>
+</section>
+<footer class=article-footer>
+<section class=article-tags>
+<a href=/tags/system_development/>system_development</a>
+</section>
+</footer>
+</article>
+<aside class=related-contents--wrapper>
+<h2 class=section-title>Related contents</h2>
+<div class=related-contents>
+<div class="flex article-list--tile">
+<article>
+<a href=/p/fe-book_chapter-1-hardware_lesson-1-1-hardware/>
+<div class=article-details>
+<h2 class=article-title>FE Book_Chapter 1: Hardware_Lesson 1-1: Hardware</h2>
+</div>
+</a>
+</article>
+</div>
+</div>
+</aside>
+<footer class=site-footer>
+<section class=copyright>
+&copy;
+2020 -
+2021 Sakura Blog
+</section>
+<section class=powerby>
+Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> <br>
+Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.1.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a>
+</section>
+</footer>
+<div class=pswp tabindex=-1 role=dialog aria-hidden=true>
+<div class=pswp__bg></div>
+<div class=pswp__scroll-wrap>
+<div class=pswp__container>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+</div>
+<div class="pswp__ui pswp__ui--hidden">
+<div class=pswp__top-bar>
+<div class=pswp__counter></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class=pswp__preloader>
+<div class=pswp__preloader__icn>
+<div class=pswp__preloader__cut>
+<div class=pswp__preloader__donut></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class=pswp__share-tooltip></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class=pswp__caption>
+<div class=pswp__caption__center></div>
+</div>
+</div>
+</div>
+</div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css integrity="sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=" crossorigin=anonymous>
+</main>
+<aside class="sidebar right-sidebar sticky">
+<section class="widget archives">
+<div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg>
+</div>
+<h2 class="widget-title section-title">Table of contents</h2>
+<div class=widget--toc>
+<nav id=TableOfContents>
+<ol>
+<li>
+<ol>
+<li><a href=#quy-trình-phát-triển-hệ-thống>Quy trình phát triển hệ thống</a>
+<ol>
+<li><a href=#định-nghĩa-yêu-cầu>Định nghĩa yêu cầu</a></li>
+<li><a href=#thiết-kế-hệ-thống>Thiết kế hệ thống</a></li>
+<li><a href=#lập-trình>Lập trình</a></li>
+<li><a href=#test>Test</a></li>
+<li><a href=#chấp-nhận-phần-mềm>Chấp nhận phần mềm</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</nav>
+</div>
+</section>
+</aside>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous defer></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const a=document.createElement('link');a.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",a.type="text/css",a.rel="stylesheet",document.head.appendChild(a)})()</script>
+</body>
+</html>
