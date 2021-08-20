@@ -16,9 +16,7 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-      - name: include stub submodule to base repo
-        run:  ls -alt
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
