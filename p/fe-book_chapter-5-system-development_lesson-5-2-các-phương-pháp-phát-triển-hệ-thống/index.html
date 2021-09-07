@@ -1,0 +1,220 @@
+<!doctype html><html lang=en-us>
+<head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Các phương pháp phát triển hệ thống Có một số loại trong cách tiến hành phát triển, ở những loại chính ta có Waterfall model, Prototyping model, Spiral model.
+Waterfall model Phương pháp phát triển tiến hành theo trình tự &amp;ldquo;Định nghĩa yêu cầu&amp;rdquo; → &amp;ldquo;Thiết kế hệ thống&amp;rdquo; → &amp;ldquo;Lập trình&amp;rdquo; → &amp;ldquo;Test&amp;rdquo; được gọi là Waterfall model. Thứ đã giải thích ở &amp;ldquo;5-1 Khái quát phát triển hệ thống&amp;rdquo; chính là phương pháp phát triển này."><title>FE Book_Chapter 5: System development_Lesson 5-2: Các phương pháp Phát triển hệ thống</title>
+<link rel=canonical href=https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/>
+<link rel=stylesheet href=/scss/style.min.css><meta property="og:title" content="FE Book_Chapter 5: System development_Lesson 5-2: Các phương pháp Phát triển hệ thống">
+<meta property="og:description" content="Các phương pháp phát triển hệ thống Có một số loại trong cách tiến hành phát triển, ở những loại chính ta có Waterfall model, Prototyping model, Spiral model.
+Waterfall model Phương pháp phát triển tiến hành theo trình tự &amp;ldquo;Định nghĩa yêu cầu&amp;rdquo; → &amp;ldquo;Thiết kế hệ thống&amp;rdquo; → &amp;ldquo;Lập trình&amp;rdquo; → &amp;ldquo;Test&amp;rdquo; được gọi là Waterfall model. Thứ đã giải thích ở &amp;ldquo;5-1 Khái quát phát triển hệ thống&amp;rdquo; chính là phương pháp phát triển này.">
+<meta property="og:url" content="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/">
+<meta property="og:site_name" content="Sakura Blog">
+<meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="system_development"><meta property="article:published_time" content="2021-04-10T17:00:00+07:00"><meta property="article:modified_time" content="2021-04-10T17:00:00+07:00">
+<meta name=twitter:title content="FE Book_Chapter 5: System development_Lesson 5-2: Các phương pháp Phát triển hệ thống">
+<meta name=twitter:description content="Các phương pháp phát triển hệ thống Có một số loại trong cách tiến hành phát triển, ở những loại chính ta có Waterfall model, Prototyping model, Spiral model.
+Waterfall model Phương pháp phát triển tiến hành theo trình tự &amp;ldquo;Định nghĩa yêu cầu&amp;rdquo; → &amp;ldquo;Thiết kế hệ thống&amp;rdquo; → &amp;ldquo;Lập trình&amp;rdquo; → &amp;ldquo;Test&amp;rdquo; được gọi là Waterfall model. Thứ đã giải thích ở &amp;ldquo;5-1 Khái quát phát triển hệ thống&amp;rdquo; chính là phương pháp phát triển này.">
+<link rel="shortcut icon" href=/favicon.ico>
+</head>
+<body class="article-page has-toc">
+<script>(function(){const a='StackColorScheme';localStorage.getItem(a)||localStorage.setItem(a,"auto")})()</script><script>(function(){const b='StackColorScheme',a=localStorage.getItem(b),c=window.matchMedia('(prefers-color-scheme: dark)').matches===!0;a=='dark'||a==='auto'&&c?document.documentElement.dataset.scheme='dark':document.documentElement.dataset.scheme='light'})()</script>
+<div class="container main-container flex
+extended">
+<div id=article-toolbar>
+<a href=https://sakazutoshi.com class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg>
+<span>Back</span>
+</a>
+</div>
+<main class="main full-width">
+<article class=main-article>
+<header class=article-header>
+<div class=article-details>
+<header class=article-category>
+<a href=/categories/fe_book/>
+FE_Book
+</a>
+</header>
+<h2 class=article-title>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/>FE Book_Chapter 5: System development_Lesson 5-2: Các phương pháp Phát triển hệ thống</a>
+</h2>
+<footer class=article-time>
+<div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>Apr 10, 2021</time>
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>
+4 min read
+</time>
+</div>
+</footer>
+</div>
+</header>
+<section class=article-content>
+<h3 id=các-phương-pháp-phát-triển-hệ-thống>Các phương pháp phát triển hệ thống</h3>
+<p>Có một số loại trong cách tiến hành phát triển, ở những loại chính ta có <strong>Waterfall model</strong>, <strong>Prototyping model</strong>, <strong>Spiral model</strong>.</p>
+<h4 id=waterfall-model>Waterfall model</h4>
+<p>Phương pháp phát triển tiến hành theo trình tự &ldquo;Định nghĩa yêu cầu&rdquo; → &ldquo;Thiết kế hệ thống&rdquo; → &ldquo;Lập trình&rdquo; → &ldquo;Test&rdquo; được gọi là <strong>Waterfall model</strong>. Thứ đã giải thích ở &ldquo;5-1 Khái quát phát triển hệ thống&rdquo; chính là phương pháp phát triển này. Do tiến hành theo trình tự từ đầu, nên nó có đặc trưng là dễ nắm được tình hình tiến triển. Ngược lại, một khi đã tiến qua process tiếp theo, sẽ khó quay trở về process trước đó để chỉnh sửa, nên khi mỗi một công đoạn kết thúc, cần phải check thật kỹ để không phải quay trở lại công đoạn trước đó.</p>
+<p><figure style=flex-grow:226;flex-basis:543px>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/waterfall-model.png data-size=2462x1088><img src=/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/waterfall-model.png srcset="/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/waterfall-model_hu2b22169edb453f33696cecddfa5f5bb8_362197_480x0_resize_box_3.png 480w, /p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/waterfall-model_hu2b22169edb453f33696cecddfa5f5bb8_362197_1024x0_resize_box_3.png 1024w" width=2462 height=1088 loading=lazy alt=Waterfall_model>
+</a>
+<figcaption>Waterfall_model</figcaption>
+</figure></p>
+<p>※<em>Hãy biết cả điều này nữa</em></p>
+<pre><code>*Chi phí (cost) cần để sửa chữa*
+Trong phát triển theo mô hình Waterfall model, nếu test vận hành 
+mà phát hiện ra sai sót, thì chi phí cần để sửa chữa sẽ rất cao, 
+đến mức nguyên nhân là do công đoạn thượng nguồn trong quá trình phát triển
+</code></pre>
+<h4 id=prototyping-model>Prototyping model</h4>
+<p>Phương pháp tạo sản phẩm thử nghiệm (Prototype) từ đầu, rồi nhờ người sử dụng (người đặt hàng) kiểm tra hiệu quả hay tính hữu dụng và tiến hành phát triển song song được gọi là Prototyping model. Dẫu có hiểu sai, hiểu nhầm giữa người đặt hàng và người phát triển, thì vẫn có thể xác nhận và chỉnh sửa từ sớm, nên có thể giảm thiểu sai sót hay quay trở lại phát triển.</p>
+<h4 id=spiral-model>Spiral model</h4>
+<p>Khi qua đến hệ thống có quy mô lớn, thì tiến hành làm tất cả hệ thống theo quy trình Waterfall model sẽ rất vất vả, và tạo Prototype cũng không đơn giản. Trong những trường hợp như vậy, người ta sẽ chia hệ thống ra thành một vài hệ thống con (subsystem), tiến hành phát triển theo Spiral model lặp lại các vòng tròn (cycle) phát triển. Các hệ thống con đã hoàn thiện thì sẽ tạo Prototype để nhờ người dùng đánh giá, rồi lấy đó làm bộ phận để phát triển hệ thống con lớn hơn nữa. Quá trình làm như vậy để rồi các hệ thống con dần dần lớn lên làm ta hình dung tới xoắn ốc (spiral), nên nó được gọi là Spiral model.</p>
+<p><figure style=flex-grow:212;flex-basis:511px>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/spiral-model.png data-size=1976x928><img src=/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/spiral-model.png srcset="/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/spiral-model_hu6576a2aa9817bf1d0d7c4e5007626179_207501_480x0_resize_box_3.png 480w, /p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/spiral-model_hu6576a2aa9817bf1d0d7c4e5007626179_207501_1024x0_resize_box_3.png 1024w" width=1976 height=928 loading=lazy alt=Spiral_model>
+</a>
+<figcaption>Spiral_model</figcaption>
+</figure></p>
+<p>※<em>Hãy biết cả điều này nữa</em></p>
+<pre><code>*Phát triển Agile*
+Agile có nghĩa là &quot;Mang tính nhanh nhạy&quot;. Đây là phương pháp phát triển 
+theo kiểu phái sinh từ Spiral model, vừa lặp lại vòng tròn (cycle) phát triển 
+trong thời gian ngắn theo đơn vị tuần, vừa hoàn thiện các chức năng theo giai đoạn. 
+Nó có ưu điểm là rút ngắn thời gian phát triển, có thể xử lý đối phó linh hoạt 
+đối với những thay đổi về spec.
+</code></pre>
+<p>※<em>Chỗ này thường ra này!</em></p>
+<pre><code>*Thuật ngữ*
+[ウォータフォールモデル] (Waterfall model): phát triển theo thứ tự 
+Định nghĩa yêu cầu → Thiết kế hệ thống → Lập trình → Test
+[プロトタイピング] (Prototyping): vừa tạo sản phẩm thử nghiệm vừa phát triển
+[スパイラルモデル] (Spiral model): lặp lại các development cycle để phát triển
+</code></pre>
+<p>※<em>Thử thách với bài test</em></p>
+<pre><code>(Fundamental Information Technology Engineer Examination Mùa xuân năm Heisei 21)
+Giải thích cho Waterfall model trong phát triển hệ thống là cái nào dưới đây
+ア: Không đi tạo tất cả trong 1 lần phát triển, mà phát triển theo từng giai đoạn 
+ứng với độ ưu tiên của chức năng, trên cơ sở kiến trúc hệ thống cơ bản
+イ: Chia công đoạn phát triển ra thành Thiết kế, Implement, Test,..., 
+khi hoàn thành công đoạn trước thì dùng thành quả đó để thực hiện công đoạn tiếp theo
+ウ: Tạo sản phẩm thử nghiệm, feeback (phản hồi) yêu cầu của người dùng để tiến hành phát triển 
+エ: Không cố tạo toàn bộ phần mềm phức tạp từ đầu, mà tiến hành lặp lại các bước 
+Phân tích, Thiết kế, Implement, Test từ những phần đơn giản, rồi từ từ mở rộng ra
+→ Answer: イ
+Giải thích: Waterfall model là phương pháp phát triển chia các công đoạn phát triển ra thành 
+Thiết kế, Implement, Test,..., và tiến hành làm theo thứ tự này.
+</code></pre>
+<p>※<em>Thử thách với bài test</em></p>
+<pre><code>(Fundamental Information Technology Engineer Examination Mùa thu năm Heisei 23)
+Phương pháp phát triển phần mềm vừa lặp lại quy trình phát triển 
+từ phân tích yêu cầu đến implement, vừa đi xây dụng nên hệ thống 
+là cái nào dưới đây
+ア: Waterfall model
+イ: Spiral model
+ウ: Prototyping model
+エ: Relational model
+→ Answer: イ
+Giải thích: Phương pháp phát triển xây dựng nên hệ thống bằng cách 
+lặp lại vòng tròn phát triển là Spiral model</code></pre>
+</section>
+<footer class=article-footer>
+<section class=article-tags>
+<a href=/tags/system_development/>system_development</a>
+</section>
+</footer>
+</article>
+<aside class=related-contents--wrapper>
+<h2 class=section-title>Related contents</h2>
+<div class=related-contents>
+<div class="flex article-list--tile">
+<article>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/>
+<div class=article-details>
+<h2 class=article-title>FE Book_Chapter 5: System development_Lesson 5-1: Khái quát về Phát triển hệ thống</h2>
+</div>
+</a>
+</article>
+<article>
+<a href=/p/fe-book_chapter-1-hardware_lesson-1-1-hardware/>
+<div class=article-details>
+<h2 class=article-title>FE Book_Chapter 1: Hardware_Lesson 1-1: Hardware</h2>
+</div>
+</a>
+</article>
+</div>
+</div>
+</aside>
+<footer class=site-footer>
+<section class=copyright>
+&copy;
+2020 -
+2021 Sakura Blog
+</section>
+<section class=powerby>
+Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> <br>
+Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.1.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a>
+</section>
+</footer>
+<div class=pswp tabindex=-1 role=dialog aria-hidden=true>
+<div class=pswp__bg></div>
+<div class=pswp__scroll-wrap>
+<div class=pswp__container>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+</div>
+<div class="pswp__ui pswp__ui--hidden">
+<div class=pswp__top-bar>
+<div class=pswp__counter></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class=pswp__preloader>
+<div class=pswp__preloader__icn>
+<div class=pswp__preloader__cut>
+<div class=pswp__preloader__donut></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class=pswp__share-tooltip></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class=pswp__caption>
+<div class=pswp__caption__center></div>
+</div>
+</div>
+</div>
+</div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css integrity="sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=" crossorigin=anonymous>
+</main>
+<aside class="sidebar right-sidebar sticky">
+<section class="widget archives">
+<div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg>
+</div>
+<h2 class="widget-title section-title">Table of contents</h2>
+<div class=widget--toc>
+<nav id=TableOfContents>
+<ol>
+<li>
+<ol>
+<li><a href=#các-phương-pháp-phát-triển-hệ-thống>Các phương pháp phát triển hệ thống</a>
+<ol>
+<li><a href=#waterfall-model>Waterfall model</a></li>
+<li><a href=#prototyping-model>Prototyping model</a></li>
+<li><a href=#spiral-model>Spiral model</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</nav>
+</div>
+</section>
+</aside>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous defer></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const a=document.createElement('link');a.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",a.type="text/css",a.rel="stylesheet",document.head.appendChild(a)})()</script>
+</body>
+</html>

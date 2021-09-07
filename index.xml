@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sakura Blog</title><link>https://sakazutoshi.com/</link><description>Recent content on Sakura Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Mar 2021 17:00:00 +0000</lastBuildDate><atom:link href="https://sakazutoshi.com/index.xml" rel="self" type="application/rss+xml"/><item><title>FE Book_Chapter 5: System development_Lesson 5-1: Khái quát về Phát triển hệ thống</title><link>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</link><pubDate>Sun, 28 Mar 2021 17:00:00 +0000</pubDate><guid>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</guid><description>&lt;h3 id="quy-trình-phát-triển-hệ-thống">Quy trình phát triển hệ thống&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sakura Blog</title><link>https://sakazutoshi.com/</link><description>Recent content on Sakura Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 10 Apr 2021 17:00:00 +0700</lastBuildDate><atom:link href="https://sakazutoshi.com/index.xml" rel="self" type="application/rss+xml"/><item><title>FE Book_Chapter 5: System development_Lesson 5-2: Các phương pháp Phát triển hệ thống</title><link>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</link><pubDate>Sat, 10 Apr 2021 17:00:00 +0700</pubDate><guid>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</guid><description>&lt;h3 id="các-phương-pháp-phát-triển-hệ-thống">Các phương pháp phát triển hệ thống&lt;/h3>
+&lt;p>Có một số loại trong cách tiến hành phát triển, ở những loại chính ta có &lt;strong>Waterfall model&lt;/strong>, &lt;strong>Prototyping model&lt;/strong>, &lt;strong>Spiral model&lt;/strong>.&lt;/p>
+&lt;h4 id="waterfall-model">Waterfall model&lt;/h4>
+&lt;p>Phương pháp phát triển tiến hành theo trình tự &amp;ldquo;Định nghĩa yêu cầu&amp;rdquo; → &amp;ldquo;Thiết kế hệ thống&amp;rdquo; → &amp;ldquo;Lập trình&amp;rdquo; → &amp;ldquo;Test&amp;rdquo; được gọi là &lt;strong>Waterfall model&lt;/strong>. Thứ đã giải thích ở &amp;ldquo;5-1 Khái quát phát triển hệ thống&amp;rdquo; chính là phương pháp phát triển này. Do tiến hành theo trình tự từ đầu, nên nó có đặc trưng là dễ nắm được tình hình tiến triển. Ngược lại, một khi đã tiến qua process tiếp theo, sẽ khó quay trở về process trước đó để chỉnh sửa, nên khi mỗi một công đoạn kết thúc, cần phải check thật kỹ để không phải quay trở lại công đoạn trước đó.&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 226; flex-basis: 543px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/waterfall-model.png" data-size="2462x1088">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/waterfall-model.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/waterfall-model_hu2b22169edb453f33696cecddfa5f5bb8_362197_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/waterfall-model_hu2b22169edb453f33696cecddfa5f5bb8_362197_1024x0_resize_box_3.png 1024w"
+width="2462"
+height="1088"
+loading="lazy"
+alt="Waterfall_model">
+&lt;/a>
+&lt;figcaption>Waterfall_model&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>※&lt;em>Hãy biết cả điều này nữa&lt;/em>&lt;/p>
+&lt;pre>&lt;code>*Chi phí (cost) cần để sửa chữa*
+Trong phát triển theo mô hình Waterfall model, nếu test vận hành
+mà phát hiện ra sai sót, thì chi phí cần để sửa chữa sẽ rất cao,
+đến mức nguyên nhân là do công đoạn thượng nguồn trong quá trình phát triển
+&lt;/code>&lt;/pre>
+&lt;h4 id="prototyping-model">Prototyping model&lt;/h4>
+&lt;p>Phương pháp tạo sản phẩm thử nghiệm (Prototype) từ đầu, rồi nhờ người sử dụng (người đặt hàng) kiểm tra hiệu quả hay tính hữu dụng và tiến hành phát triển song song được gọi là Prototyping model. Dẫu có hiểu sai, hiểu nhầm giữa người đặt hàng và người phát triển, thì vẫn có thể xác nhận và chỉnh sửa từ sớm, nên có thể giảm thiểu sai sót hay quay trở lại phát triển.&lt;/p>
+&lt;h4 id="spiral-model">Spiral model&lt;/h4>
+&lt;p>Khi qua đến hệ thống có quy mô lớn, thì tiến hành làm tất cả hệ thống theo quy trình Waterfall model sẽ rất vất vả, và tạo Prototype cũng không đơn giản. Trong những trường hợp như vậy, người ta sẽ chia hệ thống ra thành một vài hệ thống con (subsystem), tiến hành phát triển theo Spiral model lặp lại các vòng tròn (cycle) phát triển. Các hệ thống con đã hoàn thiện thì sẽ tạo Prototype để nhờ người dùng đánh giá, rồi lấy đó làm bộ phận để phát triển hệ thống con lớn hơn nữa. Quá trình làm như vậy để rồi các hệ thống con dần dần lớn lên làm ta hình dung tới xoắn ốc (spiral), nên nó được gọi là Spiral model.&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 212; flex-basis: 511px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/spiral-model.png" data-size="1976x928">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/spiral-model.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/spiral-model_hu6576a2aa9817bf1d0d7c4e5007626179_207501_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/spiral-model_hu6576a2aa9817bf1d0d7c4e5007626179_207501_1024x0_resize_box_3.png 1024w"
+width="1976"
+height="928"
+loading="lazy"
+alt="Spiral_model">
+&lt;/a>
+&lt;figcaption>Spiral_model&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>※&lt;em>Hãy biết cả điều này nữa&lt;/em>&lt;/p>
+&lt;pre>&lt;code>*Phát triển Agile*
+Agile có nghĩa là &amp;quot;Mang tính nhanh nhạy&amp;quot;. Đây là phương pháp phát triển
+theo kiểu phái sinh từ Spiral model, vừa lặp lại vòng tròn (cycle) phát triển
+trong thời gian ngắn theo đơn vị tuần, vừa hoàn thiện các chức năng theo giai đoạn.
+Nó có ưu điểm là rút ngắn thời gian phát triển, có thể xử lý đối phó linh hoạt
+đối với những thay đổi về spec.
+&lt;/code>&lt;/pre>
+&lt;p>※&lt;em>Chỗ này thường ra này!&lt;/em>&lt;/p>
+&lt;pre>&lt;code>*Thuật ngữ*
+[ウォータフォールモデル] (Waterfall model): phát triển theo thứ tự
+Định nghĩa yêu cầu → Thiết kế hệ thống → Lập trình → Test
+[プロトタイピング] (Prototyping): vừa tạo sản phẩm thử nghiệm vừa phát triển
+[スパイラルモデル] (Spiral model): lặp lại các development cycle để phát triển
+&lt;/code>&lt;/pre>
+&lt;p>※&lt;em>Thử thách với bài test&lt;/em>&lt;/p>
+&lt;pre>&lt;code>(Fundamental Information Technology Engineer Examination Mùa xuân năm Heisei 21)
+Giải thích cho Waterfall model trong phát triển hệ thống là cái nào dưới đây
+ア: Không đi tạo tất cả trong 1 lần phát triển, mà phát triển theo từng giai đoạn
+ứng với độ ưu tiên của chức năng, trên cơ sở kiến trúc hệ thống cơ bản
+イ: Chia công đoạn phát triển ra thành Thiết kế, Implement, Test,...,
+khi hoàn thành công đoạn trước thì dùng thành quả đó để thực hiện công đoạn tiếp theo
+ウ: Tạo sản phẩm thử nghiệm, feeback (phản hồi) yêu cầu của người dùng để tiến hành phát triển
+エ: Không cố tạo toàn bộ phần mềm phức tạp từ đầu, mà tiến hành lặp lại các bước
+Phân tích, Thiết kế, Implement, Test từ những phần đơn giản, rồi từ từ mở rộng ra
+→ Answer: イ
+Giải thích: Waterfall model là phương pháp phát triển chia các công đoạn phát triển ra thành
+Thiết kế, Implement, Test,..., và tiến hành làm theo thứ tự này.
+&lt;/code>&lt;/pre>
+&lt;p>※&lt;em>Thử thách với bài test&lt;/em>&lt;/p>
+&lt;pre>&lt;code>(Fundamental Information Technology Engineer Examination Mùa thu năm Heisei 23)
+Phương pháp phát triển phần mềm vừa lặp lại quy trình phát triển
+từ phân tích yêu cầu đến implement, vừa đi xây dụng nên hệ thống
+là cái nào dưới đây
+ア: Waterfall model
+イ: Spiral model
+ウ: Prototyping model
+エ: Relational model
+→ Answer: イ
+Giải thích: Phương pháp phát triển xây dựng nên hệ thống bằng cách
+lặp lại vòng tròn phát triển là Spiral model&lt;/code>&lt;/pre></description></item><item><title>FE Book_Chapter 5: System development_Lesson 5-1: Khái quát về Phát triển hệ thống</title><link>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</link><pubDate>Sun, 28 Mar 2021 17:00:00 +0000</pubDate><guid>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</guid><description>&lt;h3 id="quy-trình-phát-triển-hệ-thống">Quy trình phát triển hệ thống&lt;/h3>
 &lt;p>Hệ thống là cơ cấu kết hợp phần cứng và phần mềm, để chúng xử lý giúp ta những công việc nhất định nào đó. Có nhiều hệ thống
 khác nhau xung quanh chúng ta, ví dụ như hệ thống ATM ngân hàng, hay hệ thống đặt chỗ ngồi trên máy bay.
 Máy tính được sử dụng cho hệ thống không nhất thiết chỉ có 1 cái. Cũng có những hệ thống quy mô lớn, kết nối cả một mạng lưới nhiều máy tính.&lt;/p>
