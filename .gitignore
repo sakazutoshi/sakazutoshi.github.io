@@ -26,3 +26,4 @@ _testmain.go
 /themes
 /resources/_gen
 .DS_Store
+.idea
