@@ -1,4 +1,155 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sakura Blog</title><link>https://sakazutoshi.com/</link><description>Recent content on Sakura Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 10 Apr 2021 17:00:00 +0700</lastBuildDate><atom:link href="https://sakazutoshi.com/index.xml" rel="self" type="application/rss+xml"/><item><title>FE Book_Chapter 5: System development_Lesson 5-2: Các phương pháp Phát triển hệ thống</title><link>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</link><pubDate>Sat, 10 Apr 2021 17:00:00 +0700</pubDate><guid>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</guid><description>&lt;h3 id="các-phương-pháp-phát-triển-hệ-thống">Các phương pháp phát triển hệ thống&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sakura Blog</title><link>https://sakazutoshi.com/</link><description>Recent content on Sakura Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 02 May 2021 19:00:00 +0700</lastBuildDate><atom:link href="https://sakazutoshi.com/index.xml" rel="self" type="application/rss+xml"/><item><title>FE Book_Chapter 5: System development_Lesson 5-3: Mô hình hóa nghiệp vụ</title><link>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/</link><pubDate>Sun, 02 May 2021 19:00:00 +0700</pubDate><guid>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/</guid><description>&lt;h3 id="phương-pháp-mô-hình-hóa">Phương pháp mô hình hóa&lt;/h3>
+&lt;p>Vào lúc bắt đầu phát triển hệ thống, trước tiên, ta sẽ dùng sơ đồ để giải thích một cách dễ hiểu quy trình nghiệp vụ (business process), hay quan hệ giữa các thông tin sẽ sử dụng (data class) mà ta định tạo thành hệ thống. Công việc này được gọi là &lt;em>Mô hình hóa nghiệp vụ&lt;/em>. Hãy cùng xem những cách dùng sơ đồ lý giải được sử dụng khi mô hình hóa nhé.&lt;/p>
+&lt;h3 id="dfd-sơ-đồ-luồng-dữ-liệu">DFD (Sơ đồ luồng dữ liệu)&lt;/h3>
+&lt;p>DFD (Data Flow Diagram) là phương pháp lý giải bằng sơ đồ chú trọng đến luồng dữ liệu, từ đó phân tích nghiệp vụ đối tượng. Nó có ưu điểm là dễ dàng check được nội dung nghiệp vụ bằng cách biến luồng dữ liệu (data flow) và quy trình xử lý dữ liệu thành sơ đồ. Tuy nhiên, DFD không thể diễn tả về thời gian, ví dụ như thời điểm xử lý.
+Ký hiệu được sử dụng trong DFD có 4 loại dưới đây.&lt;/p>
+&lt;p>&amp;lt;Các ký hiệu sử dụng trong DFD&amp;gt;&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Ký hiệu&lt;/th>
+&lt;th>Tên gọi&lt;/th>
+&lt;th>Ý nghĩa&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;figure style="flex-grow: 167; flex-basis: 400px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/data-store.png" data-size="314x188">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/data-store.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/data-store_hucbf31e060ebea1119b9968ee97ffde88_5890_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/data-store_hucbf31e060ebea1119b9968ee97ffde88_5890_1024x0_resize_box_3.png 1024w"
+width="314"
+height="188"
+loading="lazy"
+alt="Data store">
+&lt;/a>
+&lt;figcaption>Data store&lt;/figcaption>
+&lt;/figure>&lt;/td>
+&lt;td>Data store&lt;/td>
+&lt;td>Lưu trữ dữ liệu như file, business form hay database&amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;figure style="flex-grow: 265; flex-basis: 636px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/data-flow.png" data-size="318x120">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/data-flow.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/data-flow_hu563cf5304358cc774342f72b6d18ceb6_7921_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/data-flow_hu563cf5304358cc774342f72b6d18ceb6_7921_1024x0_resize_box_3.png 1024w"
+width="318"
+height="120"
+loading="lazy"
+alt="Data flow">
+&lt;/a>
+&lt;figcaption>Data flow&lt;/figcaption>
+&lt;/figure>&lt;/td>
+&lt;td>Data flow&lt;/td>
+&lt;td>Luồng dữ liệu. Phía trên luồng dữ liệu sẽ ghi mô tả tên dữ liệu&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;figure style="flex-grow: 103; flex-basis: 247px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/process.png" data-size="198x192">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/process.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/process_hu277d22be2f7a94db2fc06ec8b0f6bd62_14070_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/process_hu277d22be2f7a94db2fc06ec8b0f6bd62_14070_1024x0_resize_box_3.png 1024w"
+width="198"
+height="192"
+loading="lazy"
+alt="Process">
+&lt;/a>
+&lt;figcaption>Process&lt;/figcaption>
+&lt;/figure>&lt;/td>
+&lt;td>Process&lt;/td>
+&lt;td>Xử lý hay biến đổi dữ liệu&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;figure style="flex-grow: 189; flex-basis: 455px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/source-or-destination.png" data-size="300x158">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/source-or-destination.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/source-or-destination_hud48ab7f0668d176b2e4a530857ecf36a_5754_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/source-or-destination_hud48ab7f0668d176b2e4a530857ecf36a_5754_1024x0_resize_box_3.png 1024w"
+width="300"
+height="158"
+loading="lazy"
+alt="Source-or-Destination">
+&lt;/a>
+&lt;figcaption>Source-or-Destination&lt;/figcaption>
+&lt;/figure>&lt;/td>
+&lt;td>Nguồn phát sinh dữ liệu (nguồn); Điểm đến của dữ liệu (hấp thụ)&lt;/td>
+&lt;td>Nguồn phát sinh, hoặc là điểm đến cuối cùng của dữ liệu&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;figure style="flex-grow: 202; flex-basis: 485px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/dfd-example.png" data-size="2558x1264">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/dfd-example.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/dfd-example_hu82de6c5585c8fa9f2fe5c21c36889887_591227_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/dfd-example_hu82de6c5585c8fa9f2fe5c21c36889887_591227_1024x0_resize_box_3.png 1024w"
+width="2558"
+height="1264"
+loading="lazy"
+alt="DFD Example">
+&lt;/a>
+&lt;figcaption>DFD Example&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;h3 id="sơ-đồ-e-r">Sơ đồ E-R&lt;/h3>
+&lt;p>Sơ đồ E-R (Entity-Relationship Diagram) là thứ thể hiện cấu trúc dữ liệu bởi 2 khái niệm Thực thể (Entity) và Mối quan hệ (Relationship) giữa các thực thể với nhau, được dùng trong việc phân tích sự liên quan giữa các dữ liệu.
+Trên sơ đồ E-R, ta vẽ &amp;ldquo;Thực thể&amp;rdquo; bằng hình chữ nhật, thể hiện &amp;ldquo;Mối liên quan giữa các thực thể&amp;rdquo; bằng đường thẳng hoặc dấu mũi tên. Tùy theo sự khác biệt về quan hệ, mà chia ra làm 4 loại dưới đây.&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 155; flex-basis: 374px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/erd.png" data-size="2068x1326">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/erd.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/erd_hu5421fa2d30558407be93096e442315ac_260120_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/erd_hu5421fa2d30558407be93096e442315ac_260120_1024x0_resize_box_3.png 1024w"
+width="2068"
+height="1326"
+loading="lazy"
+alt="ERD">
+&lt;/a>
+&lt;figcaption>ERD&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Ví dụ, ta sẽ thử đi vẽ sơ đồ E-R cho quy trình nghiệp vụ đơn giản nhất là &amp;ldquo;Khách hàng thực hiện order&amp;rdquo;. Nếu thử suy nghĩ theo hướng &amp;ldquo;Order&amp;rdquo; từ &amp;ldquo;Khách hàng&amp;rdquo;, thì do 1 khách hàng sẽ đặt nhiều order, nên sẽ là quan hệ 1 nhiều (1-n)
+Ngược lại, nếu suy nghĩ theo hướng &amp;ldquo;Khách hàng&amp;rdquo; từ &amp;ldquo;Order&amp;rdquo;, thì vì 1 order được đặt từ 1 khách hàng, nên sẽ là quan hệ 1 1.
+Do đó, sẽ ra mô tả sơ đồ E-R như dưới đây:&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 462; flex-basis: 1110px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/erd-example.png" data-size="2072x448">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/erd-example.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/erd-example_hu13d638eb692ef8ccee2587eef2654a1d_89442_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/erd-example_hu13d638eb692ef8ccee2587eef2654a1d_89442_1024x0_resize_box_3.png 1024w"
+width="2072"
+height="448"
+loading="lazy"
+alt="ERD Example">
+&lt;/a>
+&lt;figcaption>ERD Example&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;h3 id="sơ-đồ-chuyển-đổi-trạng-thái">Sơ đồ chuyển đổi trạng thái&lt;/h3>
+&lt;p>Sơ đồ chuyển đổi trạng thái là sơ đồ được sử dụng khi mô tả hoạt động sẽ thực thi đi theo cùng động lực gây biến đổi trạng thái như trải qua một khoảng thời gian hay có tín hiệu kiểm soát,&amp;hellip; và sự biến đổi. Nó rất tiện trong việc phân tích hay thiết kế hệ thống mang tính real time - điều mà DFD không làm được tốt. Trong phát triển hệ thống, nó được sử dụng để thể hiện những thay đổi về nghiệp vụ hay di chuyển màn hình&amp;hellip;&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 169; flex-basis: 406px">
+&lt;a href="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/state-transition-diagram.png" data-size="2520x1488">&lt;img src="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/state-transition-diagram.png"
+srcset="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/state-transition-diagram_hu5c38d55052880a764b41670f886df5a4_919913_480x0_resize_box_3.png 480w, https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/state-transition-diagram_hu5c38d55052880a764b41670f886df5a4_919913_1024x0_resize_box_3.png 1024w"
+width="2520"
+height="1488"
+loading="lazy"
+alt="State Transition Diagram">
+&lt;/a>
+&lt;figcaption>State Transition Diagram&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>※&lt;em>Chỗ này thường ra này!&lt;/em>&lt;/p>
+&lt;pre>&lt;code>*Thuật ngữ*
+[DFD]: Chú trọng đến luồng dữ liệu để thể hiện
+[E-R図] (Sơ đồ E-R, ERD): Chú trọng đến Thực thể (Entity)
+và Quan hệ (Relationship) giữa các thực thể để thể hiện cấu trúc dữ liệu
+[状態遷移図] (Sơ đồ chuyển đổi trạng thái): Thể hiện sự chuyển đổi trạng thái
+của hệ thống. Được áp dụng cho hệ thống real time
+&lt;/code>&lt;/pre>
+&lt;p>※&lt;em>Thử thách với bài test&lt;/em>&lt;/p>
+&lt;pre>&lt;code>(Fundamental Information Technology Engineer Examination Mùa xuân năm Heisei 27)
+Giải thích cho Sơ đồ E-R là cái nào dưới đây?
+ア: Là sơ đồ thể hiện model hướng đối tượng
+イ: Là sơ đồ thể hiện tình hình trạng thái biến đổi theo thời gian hay hành động,...
+ウ: Là sơ đồ thể hiện thế giới đối tượng bởi 2 khái niệm là Thực thể và Quan hệ
+エ: Là sơ đồ thể hiện một cách dễ hiểu, trực quan luồng dữ liệu
+→ Answer: ウ
+Giải thích: Sơ đồ E-R là sơ đồ chú trọng đến thực thể và mối quan hệ giữa các thực thể để thể hiện thông tin.
+&lt;/code>&lt;/pre>
+&lt;p>※&lt;em>Thử thách với bài test&lt;/em>&lt;/p>
+&lt;pre>&lt;code>(Fundamental Information Technology Engineer Examination Mùa xuân năm Heisei 25)
+Khi thiết kế, hệ thống nào dưới đây là thích hợp nhất để sử dụng sơ đồ chuyển đổi trạng thái?
+ア: Hệ thống kiểm kê tồn kho xử lý tính tổng tài sản kiểm kê vào cuối tháng và khi quyết toán
+イ: Hệ thống báo cáo tình hình hoạt động tài nguyên hệ thống, lấy tình hình hoạt động hàng ngày
+của tài nguyên hệ thống để xuất ra làm report
+ウ: Hệ thống tính toán tiền nước bằng cách nhập dữ liệu đồng hồ đo nước sinh hoạt để tính toán tiền phí
+エ: Hệ thống kiểm soát nhiệt độ, giữ môi trường trong nhà kính ở mức hợp lý nhất
+từ thông tin cảm biến được lắp đặt
+→ Answer: エ
+Giải thích: Sơ đồ chuyển đổi trạng thái thích hợp để thiết kế hệ thống real time
+giống như hệ thống kiểm soát nhiệt độ
+&lt;/code>&lt;/pre></description></item><item><title>FE Book_Chapter 5: System development_Lesson 5-2: Các phương pháp Phát triển hệ thống</title><link>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</link><pubDate>Sat, 10 Apr 2021 17:00:00 +0700</pubDate><guid>https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/</guid><description>&lt;h3 id="các-phương-pháp-phát-triển-hệ-thống">Các phương pháp phát triển hệ thống&lt;/h3>
 &lt;p>Có một số loại trong cách tiến hành phát triển, ở những loại chính ta có &lt;strong>Waterfall model&lt;/strong>, &lt;strong>Prototyping model&lt;/strong>, &lt;strong>Spiral model&lt;/strong>.&lt;/p>
 &lt;h4 id="waterfall-model">Waterfall model&lt;/h4>
 &lt;p>Phương pháp phát triển tiến hành theo trình tự &amp;ldquo;Định nghĩa yêu cầu&amp;rdquo; → &amp;ldquo;Thiết kế hệ thống&amp;rdquo; → &amp;ldquo;Lập trình&amp;rdquo; → &amp;ldquo;Test&amp;rdquo; được gọi là &lt;strong>Waterfall model&lt;/strong>. Thứ đã giải thích ở &amp;ldquo;5-1 Khái quát phát triển hệ thống&amp;rdquo; chính là phương pháp phát triển này. Do tiến hành theo trình tự từ đầu, nên nó có đặc trưng là dễ nắm được tình hình tiến triển. Ngược lại, một khi đã tiến qua process tiếp theo, sẽ khó quay trở về process trước đó để chỉnh sửa, nên khi mỗi một công đoạn kết thúc, cần phải check thật kỹ để không phải quay trở lại công đoạn trước đó.&lt;/p>
