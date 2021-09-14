@@ -1,0 +1,220 @@
+<!doctype html><html lang=en-us>
+<head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Thiết kế human interface Ở định nghĩa yêu cầu phần mềm thiết kế phần bề ngoài của hệ thống (External design), ta sẽ thiết kế các cách hiển thị thông tin đối với user hay những màn hình mà user sẽ thao tác thực tế. Phần gắn kết user với máy tính kiểu như vậy được gọi là Human interface. Human interface cần phải suy nghĩ xem &amp;ldquo;Có dễ dàng sử dụng đối với user hay không&amp;rdquo; để còn thiết kế."><title>FE Book_Chapter 5: System development_Lesson 5-4: Định nghĩa yêu cầu phần mềm (External design)</title>
+<link rel=canonical href=https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-4-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-y%C3%AAu-c%E1%BA%A7u-ph%E1%BA%A7n-m%E1%BB%81m-external-design/>
+<link rel=stylesheet href=/scss/style.min.css><meta property="og:title" content="FE Book_Chapter 5: System development_Lesson 5-4: Định nghĩa yêu cầu phần mềm (External design)">
+<meta property="og:description" content="Thiết kế human interface Ở định nghĩa yêu cầu phần mềm thiết kế phần bề ngoài của hệ thống (External design), ta sẽ thiết kế các cách hiển thị thông tin đối với user hay những màn hình mà user sẽ thao tác thực tế. Phần gắn kết user với máy tính kiểu như vậy được gọi là Human interface. Human interface cần phải suy nghĩ xem &amp;ldquo;Có dễ dàng sử dụng đối với user hay không&amp;rdquo; để còn thiết kế.">
+<meta property="og:url" content="https://sakazutoshi.com/p/fe-book_chapter-5-system-development_lesson-5-4-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-y%C3%AAu-c%E1%BA%A7u-ph%E1%BA%A7n-m%E1%BB%81m-external-design/">
+<meta property="og:site_name" content="Sakura Blog">
+<meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="system_development"><meta property="article:published_time" content="2021-06-20T18:00:00+07:00"><meta property="article:modified_time" content="2021-06-20T18:00:00+07:00">
+<meta name=twitter:title content="FE Book_Chapter 5: System development_Lesson 5-4: Định nghĩa yêu cầu phần mềm (External design)">
+<meta name=twitter:description content="Thiết kế human interface Ở định nghĩa yêu cầu phần mềm thiết kế phần bề ngoài của hệ thống (External design), ta sẽ thiết kế các cách hiển thị thông tin đối với user hay những màn hình mà user sẽ thao tác thực tế. Phần gắn kết user với máy tính kiểu như vậy được gọi là Human interface. Human interface cần phải suy nghĩ xem &amp;ldquo;Có dễ dàng sử dụng đối với user hay không&amp;rdquo; để còn thiết kế.">
+<link rel="shortcut icon" href=/favicon.ico>
+</head>
+<body class="article-page has-toc">
+<script>(function(){const a='StackColorScheme';localStorage.getItem(a)||localStorage.setItem(a,"auto")})()</script><script>(function(){const b='StackColorScheme',a=localStorage.getItem(b),c=window.matchMedia('(prefers-color-scheme: dark)').matches===!0;a=='dark'||a==='auto'&&c?document.documentElement.dataset.scheme='dark':document.documentElement.dataset.scheme='light'})()</script>
+<div class="container main-container flex
+extended">
+<div id=article-toolbar>
+<a href=https://sakazutoshi.com class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg>
+<span>Back</span>
+</a>
+</div>
+<main class="main full-width">
+<article class=main-article>
+<header class=article-header>
+<div class=article-details>
+<header class=article-category>
+<a href=/categories/fe_book/>
+FE_Book
+</a>
+</header>
+<h2 class=article-title>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-4-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-y%C3%AAu-c%E1%BA%A7u-ph%E1%BA%A7n-m%E1%BB%81m-external-design/>FE Book_Chapter 5: System development_Lesson 5-4: Định nghĩa yêu cầu phần mềm (External design)</a>
+</h2>
+<footer class=article-time>
+<div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>Jun 20, 2021</time>
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>
+4 min read
+</time>
+</div>
+</footer>
+</div>
+</header>
+<section class=article-content>
+<h3 id=thiết-kế-human-interface>Thiết kế human interface</h3>
+<p>Ở định nghĩa yêu cầu phần mềm thiết kế phần bề ngoài của hệ thống (External design), ta sẽ thiết kế các cách hiển thị thông tin đối với user hay những màn hình mà user sẽ thao tác thực tế. Phần gắn kết user với máy tính kiểu như vậy được gọi là <em>Human interface</em>. Human interface cần phải suy nghĩ xem &ldquo;Có dễ dàng sử dụng đối với user hay không&rdquo; để còn thiết kế. &ldquo;Tính dễ dàng sử dụng&rdquo; được gọi là <em>Usability</em>.</p>
+<p>※<em>Chỗ này thường ra này!</em></p>
+<pre><code>*Thuật ngữ*
+[ヒューマンインタフェース] (Human interface): Suy nghĩ đến usability (tính khả dụng) để thiết kế 
+</code></pre>
+<h3 id=gui>GUI</h3>
+<p>GUI (Graphical User Interface) hiện tại đang rất phổ biến cũng là thứ có suy xét đến usability. GUI tức là user interface (giao diện người dùng) sử dụng hình minh hoạ để hiển thị thông tin cho user. Do những máy tính trước đây hiển thị bằng chữ cái, thao tác cũng thực hiện bằng cách nhập chữ, nên những ai không có kiến thức chuyên môn sẽ không thao tác được. Tuy nhiên, do GUI hiển thị bằng hình minh họa thay vì bằng chữ cái, có thể dùng chuột để thao tác, nên có thể thao tác một cách trực quan.</p>
+<p><figure style=flex-grow:263;flex-basis:633px>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-4-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-y%C3%AAu-c%E1%BA%A7u-ph%E1%BA%A7n-m%E1%BB%81m-external-design/about-gui.png data-size=2550x966><img src=/p/fe-book_chapter-5-system-development_lesson-5-4-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-y%C3%AAu-c%E1%BA%A7u-ph%E1%BA%A7n-m%E1%BB%81m-external-design/about-gui.png srcset="/p/fe-book_chapter-5-system-development_lesson-5-4-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-y%C3%AAu-c%E1%BA%A7u-ph%E1%BA%A7n-m%E1%BB%81m-external-design/about-gui_hucb64bef9887484228f5557a72d533082_407659_480x0_resize_box_3.png 480w, /p/fe-book_chapter-5-system-development_lesson-5-4-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-y%C3%AAu-c%E1%BA%A7u-ph%E1%BA%A7n-m%E1%BB%81m-external-design/about-gui_hucb64bef9887484228f5557a72d533082_407659_1024x0_resize_box_3.png 1024w" width=2550 height=966 loading=lazy alt=GUI>
+</a>
+<figcaption>GUI</figcaption>
+</figure></p>
+<h3 id=thiết-kế-màn-hình-gui>Thiết kế màn hình GUI</h3>
+<p>Ở thiết kế màn hình GUI, ta có thể cho hiển thị nội dung thao tác của hệ thống phát triển theo kiểu menu. Ta quan tâm đến usability, cố gắng hết sức để hình dạng hay vị trí của các button hay menu chung ở màn hình nào cũng giống nhau.
+Thêm nữa, ở màn hình user nhập dữ liệu, bằng cách cố gắng bỏ công chuẩn bị trước các phương án lựa chọn, thì sẽ có thể giảm bớt công sức, thời gian nhập vào cho user. Cụ thể, ta có thể thiết kế bộ phận kiểu như dưới đây</p>
+<p><figure style=flex-grow:168;flex-basis:404px>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-4-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-y%C3%AAu-c%E1%BA%A7u-ph%E1%BA%A7n-m%E1%BB%81m-external-design/design-screen-of-gui.png data-size=2792x1658><img src=/p/fe-book_chapter-5-system-development_lesson-5-4-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-y%C3%AAu-c%E1%BA%A7u-ph%E1%BA%A7n-m%E1%BB%81m-external-design/design-screen-of-gui.png srcset="/p/fe-book_chapter-5-system-development_lesson-5-4-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-y%C3%AAu-c%E1%BA%A7u-ph%E1%BA%A7n-m%E1%BB%81m-external-design/design-screen-of-gui_hu8cc454654fe89145ee0bd319c5760333_1017700_480x0_resize_box_3.png 480w, /p/fe-book_chapter-5-system-development_lesson-5-4-%C4%91%E1%BB%8Bnh-ngh%C4%A9a-y%C3%AAu-c%E1%BA%A7u-ph%E1%BA%A7n-m%E1%BB%81m-external-design/design-screen-of-gui_hu8cc454654fe89145ee0bd319c5760333_1017700_1024x0_resize_box_3.png 1024w" width=2792 height=1658 loading=lazy alt="Design screen of GUI">
+</a>
+<figcaption>Design screen of GUI</figcaption>
+</figure></p>
+<p>※<em>Hãy biết cả điều này nữa</em></p>
+<pre><code>*Chức năng macro*
+Chức năng gom một loạt các câu lệnh lại làm một, chạy bằng 1 câu lệnh được gọi là *Chức năng macro*.
+Nó được sử dụng với mục đích giảm bớt số lượng thao tác của user thực hiện những tác vụ cố định thường xuyên
+</code></pre>
+<p>※<em>Chỗ này thường ra này!</em></p>
+<pre><code>*Thuật ngữ*
+[プルダウンメニュー] (Pull down menu): Khi click vào button thì các mục chọn hiển thị ra làm một list
+[チェックボックス] (Check box): Có thể chọn nhiều từ trong số các phương án
+[ラジオボタン] (Radio button): Chỉ có thể chọn 1 từ trong số các phương án
+[リストボックス] (List box): Các phương án lựa chọn hiển thị ra theo menu
+[マクロ機能] (Chức năng macro): Gộp một chuỗi các câu lệnh lại làm một rồi chạy
+</code></pre>
+<p>※<em>Thử thách với bài test</em></p>
+<pre><code>(Fundamental Information Technology Engineer Examination Mùa thu năm Heisei 25)
+Ở một cửa hàng nọ, đang quản lý khoảng 200 mặt hàng. Trong số các mục nhập ở màn hình Đăng ký mới dữ liệu sản phẩm, thứ nào dưới đây là thích hợp để sử dụng Pull down menu làm phương thức nhập?
+|    |    Mục             |                  Hình thức và quy tắc                                    |
+| -- | ------------------ | ------------------------------------------------------------------------ |
+| ア | Mã số sản phẩm     | Là mục chữ và số tiếng Anh có 5 ký tự, đánh số theo từng sản phẩm         |
+| イ | Tên sản phẩm       | Là mục tiếng Nhật trong vòng 40 ký tự trở lại, đặt tên theo từng sản phẩm |
+| ウ | Phân loại sản phẩm | Là mục tiếng Nhật trong vòng 10 ký tự trở lại, có 5 phân loại             |
+| エ | Giá                | Là mục số có 6 chữ số, phạm vi từ 10,000 ~ 100,000 yên                    |
+→ Answer: ウ
+Giải thích: Pull down menu là khi click vào button, các mục lựa chọn sẽ hiển thị ra làm một list. 
+Do đó, nó sẽ thích hợp với phương thức nhập Phân loại sản phẩm có số mục chọn giới hạn 
+</code></pre>
+<p>※<em>Thử thách với bài test</em></p>
+<pre><code>(Fundamental Information Technology Engineer Examination Mùa xuân năm Heisei 26)
+Trong số các chức năng Human interface, thứ được sử dụng với mục đích giảm bớt số thao tác của người dùng 
+thực hiện các tác vụ cố định một cách thường xuyên là cái nào dưới đây?
+ア: Chức năng macro gom một chuỗi các câu lệnh lại làm một
+イ: Chức năng gom lại và hiển thị input error ở màn hình cuối cùng
+ウ: Chức năng hiển thị hiện tại đang tiến hành đến đâu trong số tất cả công đoạn
+エ: Chức năng có thể trả về trạng thái trước đó khi thao tác bị nhầm
+→ Answer: ア
+Giải thích: Khi sử dụng chức năng macro gom một chuỗi các tác vụ lại rồi chạy luôn một lần, 
+có thể giảm số thao tác của người dùng</code></pre>
+</section>
+<footer class=article-footer>
+<section class=article-tags>
+<a href=/tags/system_development/>system_development</a>
+</section>
+</footer>
+</article>
+<aside class=related-contents--wrapper>
+<h2 class=section-title>Related contents</h2>
+<div class=related-contents>
+<div class="flex article-list--tile">
+<article>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-3-m%C3%B4-h%C3%ACnh-h%C3%B3a-nghi%E1%BB%87p-v%E1%BB%A5/>
+<div class=article-details>
+<h2 class=article-title>FE Book_Chapter 5: System development_Lesson 5-3: Mô hình hóa nghiệp vụ</h2>
+</div>
+</a>
+</article>
+<article>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-2-c%C3%A1c-ph%C6%B0%C6%A1ng-ph%C3%A1p-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/>
+<div class=article-details>
+<h2 class=article-title>FE Book_Chapter 5: System development_Lesson 5-2: Các phương pháp Phát triển hệ thống</h2>
+</div>
+</a>
+</article>
+<article>
+<a href=/p/fe-book_chapter-5-system-development_lesson-5-1-kh%C3%A1i-qu%C3%A1t-v%E1%BB%81-ph%C3%A1t-tri%E1%BB%83n-h%E1%BB%87-th%E1%BB%91ng/>
+<div class=article-details>
+<h2 class=article-title>FE Book_Chapter 5: System development_Lesson 5-1: Khái quát về Phát triển hệ thống</h2>
+</div>
+</a>
+</article>
+<article>
+<a href=/p/fe-book_chapter-1-hardware_lesson-1-1-hardware/>
+<div class=article-details>
+<h2 class=article-title>FE Book_Chapter 1: Hardware_Lesson 1-1: Hardware</h2>
+</div>
+</a>
+</article>
+</div>
+</div>
+</aside>
+<footer class=site-footer>
+<section class=copyright>
+&copy;
+2020 -
+2021 Sakura Blog
+</section>
+<section class=powerby>
+Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> <br>
+Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.1.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a>
+</section>
+</footer>
+<div class=pswp tabindex=-1 role=dialog aria-hidden=true>
+<div class=pswp__bg></div>
+<div class=pswp__scroll-wrap>
+<div class=pswp__container>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+</div>
+<div class="pswp__ui pswp__ui--hidden">
+<div class=pswp__top-bar>
+<div class=pswp__counter></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class=pswp__preloader>
+<div class=pswp__preloader__icn>
+<div class=pswp__preloader__cut>
+<div class=pswp__preloader__donut></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class=pswp__share-tooltip></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class=pswp__caption>
+<div class=pswp__caption__center></div>
+</div>
+</div>
+</div>
+</div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css integrity="sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=" crossorigin=anonymous>
+</main>
+<aside class="sidebar right-sidebar sticky">
+<section class="widget archives">
+<div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg>
+</div>
+<h2 class="widget-title section-title">Table of contents</h2>
+<div class=widget--toc>
+<nav id=TableOfContents>
+<ol>
+<li>
+<ol>
+<li><a href=#thiết-kế-human-interface>Thiết kế human interface</a></li>
+<li><a href=#gui>GUI</a></li>
+<li><a href=#thiết-kế-màn-hình-gui>Thiết kế màn hình GUI</a></li>
+</ol>
+</li>
+</ol>
+</nav>
+</div>
+</section>
+</aside>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous defer></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const a=document.createElement('link');a.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",a.type="text/css",a.rel="stylesheet",document.head.appendChild(a)})()</script>
+</body>
+</html>
