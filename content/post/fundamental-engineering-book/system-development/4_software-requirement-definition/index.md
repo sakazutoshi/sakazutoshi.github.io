@@ -43,7 +43,8 @@ Thêm nữa, ở màn hình user nhập dữ liệu, bằng cách cố gắng b�
 ※*Thử thách với bài test*
 
     (Fundamental Information Technology Engineer Examination Mùa thu năm Heisei 25)
-    Ở một cửa hàng nọ, đang quản lý khoảng 200 mặt hàng. Trong số các mục nhập ở màn hình Đăng ký mới dữ liệu sản phẩm, thứ nào dưới đây là thích hợp để sử dụng Pull down menu làm phương thức nhập?
+    Ở một cửa hàng nọ, đang quản lý khoảng 200 mặt hàng. Trong số các mục nhập ở màn hình Đăng ký mới 
+    dữ liệu sản phẩm, thứ nào dưới đây là thích hợp để sử dụng Pull down menu làm phương thức nhập?
     |    |    Mục             |                  Hình thức và quy tắc                                    |
     | -- | ------------------ | ------------------------------------------------------------------------ |
     | ア | Mã số sản phẩm     | Là mục chữ và số tiếng Anh có 5 ký tự, đánh số theo từng sản phẩm         |
