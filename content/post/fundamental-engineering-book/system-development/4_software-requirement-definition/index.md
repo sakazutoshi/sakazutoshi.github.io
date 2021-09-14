@@ -1,5 +1,5 @@
 ---
-title: "FE Book_Chapter 5: System development_Lesson 5-4: Định nghĩa yêu cầu phần mềm (External design)
+title: "FE Book_Chapter 5: System development_Lesson 5-4: Định nghĩa yêu cầu phần mềm (External design)"
 author: Anh Dao To
 date: 2021-06-20T18:00:00+0700
 categories: [FE_Book]
