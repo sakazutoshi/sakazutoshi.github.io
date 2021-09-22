@@ -56,7 +56,7 @@ Thứ thể hiện độ mạnh của quan hệ giữa các module được gọ
 ***Note:**   
 Đây là một bài viết nặng về lý thuyết và yêu cầu cần có hiểu biết cũng như kinh nghiệm về kỹ thuật. Do dịch từ tiếng Nhật nên cách dùng từ có thể chưa được hợp lý. Mình đã tìm hiểu và chú thích thêm khái niệm trong tiếng Anh để dễ hiểu hơn. Tuy nhiên, còn nhiều chỗ giải thích chưa được đầy đủ, rõ ràng và chưa có phần ví dụ. Để tìm hiểu thêm, bạn có thể tham khảo các tài liệu dưới đây, cũng như tra cứu bằng các từ khóa có trong bài.
 
-Reference: [https://blogs.itmedia.co.jp/omowaku/2007/10/post_129a.html](https://blogs.itmedia.co.jp/omowaku/2007/10/post_129a.html)
+Reference: 
 1) https://viblo.asia/p/tim-hieu-ve-coupling-va-cohesion-bJzKmo7El9N
 2) https://edwardthienhoang.wordpress.com/2018/01/08/low-coupling-and-high-cohesion/
 3) https://online.grokking.org/links/401/coupling-la-gi-
