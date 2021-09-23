@@ -1,5 +1,5 @@
 ---
-title: "FE Book_Chapter 5: System development_Lesson 5-4: Thiết kế chi tiết phần mềm"
+title: "FE Book_Chapter 5: System development_Lesson 5-5: Thiết kế chi tiết phần mềm"
 author: Anh Dao To
 date: 2021-07-12T18:00:00+0700
 categories: [FE_Book]
